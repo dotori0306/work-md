@@ -1,5 +1,5 @@
-/* ∏ﬁ∞°∑£µÂ 34»∏ ∞¯¿Œ¡ﬂ∞≥ªÁ «Æº≠∫ÒΩ∫ */
-
+/* Î©îÍ∞ÄÎûúÎìú 34Ìöå Í≥µÏù∏Ï§ëÍ∞úÏÇ¨ ÌíÄÏÑúÎπÑÏä§ */
+@charset "UTF-8"; 
 @import url('https://webfontworld.github.io/pretendard/Pretendard.css');
 
 #fsv { position: relative; overflow: hidden; background:#000000;font-family: 'pretendard';}
@@ -39,9 +39,9 @@
 #fsv .fsv_header .myinfo img { vertical-align: top; }
 
 #fsv {position:relative;}
-#fsv .floBnrWrap {  width:140px;/*πË≥  ∞°∑Œ∞™ ≤¿ ≥÷æÓ¡÷ººø‰!*/ top: 150px;/*√ ±‚ top∞™*/ right:20px; /*left: 50%; margin-left: 580px;*/ position: absolute; z-index: 5; }
+#fsv .floBnrWrap {  width:140px;/*Î∞∞ÎÑà Í∞ÄÎ°úÍ∞í Íº≠ ÎÑ£Ïñ¥Ï£ºÏÑ∏Ïöî!*/ top: 150px;/*Ï¥àÍ∏∞ topÍ∞í*/ right:20px; /*left: 50%; margin-left: 580px;*/ position: absolute; z-index: 5; }
 #fsv .floBnrWrap .floBnr { position: absolute; -webkit-transition: all .5s;-moz-transition: all .5s;-ms-transition: all .5s;-o-transition: all .5s;transition: all .5s; display: flex;flex-direction: column;align-items: center;}
-#fsv .floBnrWrap .floBnr.fixed { top: 250px;/*Ω∫≈©∑—Ω√ ∞Ì¡§µ«¥¬ top∞™*/ position: fixed; }
+#fsv .floBnrWrap .floBnr.fixed { top: 250px;/*Ïä§ÌÅ¨Î°§Ïãú Í≥†Ï†ïÎêòÎäî topÍ∞í*/ position: fixed; }
 #fsv .fsv_top01_lyr {position: absolute; left: 32px; top: 560px;}
 #fsv .floBnrWrap .floBnr .btn_top {margin-top: 10px;}
 
@@ -51,7 +51,7 @@
 #fsv .stn_01 .input_text.st1 {top: 526px;}
 #fsv .stn_01 .input_text.st2 {top: 595px;}
 #fsv .stn_01 .input_text input {width: 360px;height: 46px;background: #fff;font-size: 18px;color: #999;border: none;}
-#fsv .stn_01 .input_text input[type="text"]::-ms-clear {display: none;}/* 2021.10.28 √ﬂ∞° */
+#fsv .stn_01 .input_text input[type="text"]::-ms-clear {display: none;}/* 2021.10.28 Ï∂îÍ∞Ä */
 #fsv .stn_01 .input_text .icon_del{position:absolute; top:12px;}
 
 #fsv .stn_01 .input_text input[type="text"]:focus { border:none; outline: none;}
@@ -138,11 +138,11 @@ font-style: normal;
 #fsv .tbl01 td{border-bottom: 0;}
 #fsv .delete { display: inline-block; vertical-align: middle; position: relative; top: -2px; margin-left: 4px; }
 
-/* ≈«∞¯≈Î*/
+/* ÌÉ≠Í≥µÌÜµ*/
 .stn_tabwrap .js_tab_type:after{content:'';display:block;clear:both}
 .stn_tabwrap .js_tab_con_type{display:none;}
 .stn_tabwrap .js_tab_con_type.on{display:block !important;}
-/* ∏ﬁ¿Œ ≈« */
+/* Î©îÏù∏ ÌÉ≠ */
 .stn_tabwrap .main_tab{position: relative;width:1040px;margin:0 auto;}
 .stn_tabwrap .main_tab li{float:left;width: 346px;margin-left: 1px;}
 .stn_tabwrap .main_tab li:first-child{margin-left:0;}
@@ -155,7 +155,7 @@ font-style: normal;
 #fsv_con03.main_tabcon {padding-bottom: 110px;}
 #fsv_con04.main_tabcon {padding-bottom: 110px;}
 
-/* «ÿº≥ ∞≠¿« ≈« */
+/* Ìï¥ÏÑ§ Í∞ïÏùò ÌÉ≠ */
 .js_tab_wrap{width:1100px;margin:30px auto;}
 .js_tab_wrap .js_tab_text{width:100%; display: -ms-flexbox; display:flex; -ms-flex-pack: center; justify-content: center;}
 .js_tab_wrap .js_tab_text:after{content:'';display:block;clear:both}
@@ -166,7 +166,7 @@ font-style: normal;
 .js_tab_wrap .js_tab_con_type.on{display:block}
 
 
-/* tab1 ¿⁄µø√§¡° ~ */
+/* tab1 ÏûêÎèôÏ±ÑÏ†ê ~ */
 #fsv .btn_down_wrap{display: flex;width: 100%;justify-content: center;}
 #fsv .btn_download {display: flex;width:497px;height: 80px;background:#000; text-align: center;font-size: 22px;color: #fff; font-weight:400; line-height: 81px;
 letter-spacing: -0.4px; font-family: 'pretendard'; border-radius: 20px;position: relative;align-items: center;justify-content: center;transition: transform .2s;overflow: hidden;}
@@ -225,12 +225,12 @@ letter-spacing: -0.4px; font-family: 'pretendard'; border-radius: 20px;position:
 #fsv .fsv_con0104 .notice_info { color:#999; font-size: 13px; line-height: 1.5;}
 #fsv .fsv_con0104 .desc{font-size: 13px;color: #999;text-align: left;font-family: 'pretendard';line-height: 23px;}
 
-/* tab2 ∏ﬁΩ√¡ˆ */
+/* tab2 Î©îÏãúÏßÄ */
 #fsv .fsv_con02 .paging1 > span a:first-child{border-left: 0;}
 #fsv .fsv_con02 .paging1 > span a {border-left: 1px solid #7b8b9b;}
 
 
-/* tab3 «ÿº≥∞≠¿« ~ */
+/* tab3 Ìï¥ÏÑ§Í∞ïÏùò ~ */
 #fsv .tabin_tab li {float: left;width: 50%;}
 #fsv .tabin_tab li a {position: relative;display: block;height: 80px;line-height: 78px;font-size: 30px;color: #727785;text-align: center;letter-spacing: -1.5px;}
 #fsv .tabin_tab li a:after {content: '';position: absolute;left: 0;bottom: 0;width: 100%;height: 1px;background: #9095a5;}
@@ -258,7 +258,7 @@ letter-spacing: -0.4px; font-family: 'pretendard'; border-radius: 20px;position:
 #fsv .exam_explain .buttons a.blue {background: #2d72ff; color: #fff;}
 #fsv .exam_explain .buttons a.gray {float: right;background: #333; border-color: #333; color: #fff; }
 
-/*tab4 ≈Î∞Ë ∫–ºÆ*/
+/*tab4 ÌÜµÍ≥Ñ Î∂ÑÏÑù*/
 #fsv .analysis_wrap{position: relative; background:#fff;}
 #fsv .analysis_wrap .analysis_tit{font-size:30px; color:#fff; background:#000000; line-height:80px;}
 #fsv .analysis {position: relative; width:940px; margin:0 auto; text-align:left; padding:60px;}
@@ -274,12 +274,12 @@ letter-spacing: -0.4px; font-family: 'pretendard'; border-radius: 20px;position:
 #fsv .tabin_tab2 li.on a {color: #2d72ff;font-weight: bold;}
 #fsv .tabin_tab2 li.on a:after {height: 6px;background: #2d72ff;}
 
-/* ∑π¿ÃæÓ ∆Àæ˜  */
+/* Î†àÏù¥Ïñ¥ ÌåùÏóÖ  */
 .fsv_lypop {display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 999; text-align: center;}
 .popup_more_box .ly_dim { position: fixed; left: 0; top: 0; z-index: 990; width: 100%; height: 100%; background: rgba(0,0,0,.5); }
 .popup_more_view {/*position: fixed; left: 50%; top: 50%; width: 466px; margin: -190px 0 0 -234px*/position: relative; width: 550px; margin: 150px auto 0; z-index: 999; background: #fff; text-align: left; border: 1px solid #111;}
 .popup_more_view dt {position: relative; overflow: hidden; height: 55px; background: #111; line-height: 54px; font-size: 19px; color: #fff; font-weight: bold; text-indent: 20px; }
-.popup_more_view dd {overflow-y: auto; height:340px; padding: 20px; background: #fff; font-size: 13px; line-height: 1.6; color: #333; } /* 2020.10.29 ºˆ¡§*/
+.popup_more_view dd {overflow-y: auto; height:340px; padding: 20px; background: #fff; font-size: 13px; line-height: 1.6; color: #333; } /* 2020.10.29 ÏàòÏ†ï*/
 .popup_more_view dd em {color: #d61818;}
 .popup_more_view .btn_popup_close { position: absolute; right: 0; top: 0; display: block; width: 38px; height: 54px; background: url(http://img.megaland.co.kr/full_service/2019/1024/btn_popup_close.png) 0 0 no-repeat; text-align: left; text-indent: -9999px; }
 
@@ -288,7 +288,7 @@ letter-spacing: -0.4px; font-family: 'pretendard'; border-radius: 20px;position:
 .popup_pass .bt_popClose1 { top: 0; right: -40px;position: absolute; display: block;}
 .popup_pass .ly_dim { position: fixed; left: 0; top: 0; z-index: 990; width: 100%; height: 100%; background: rgba(0,0,0,.5); }
 
-/* ¿Ã∫•∆Æ øµø™ */
+/* Ïù¥Î≤§Ìä∏ ÏòÅÏó≠ */
 .fsv_con05 .fsv_con05_top{background: url(http://img.megaland.co.kr/full_service/2023/1027/fsv_con05_top_bg.jpg) no-repeat center 0;}
 .fsv_con05 .fsv_con05_cont1{background: url(http://img.megaland.co.kr/full_service/2023/1027/fsv_con05_cont1_bg.jpg) no-repeat center 0;}
 .fsv_con05 .fsv_con05_cont2{background: #dbeeff url(http://img.megaland.co.kr/full_service/2023/1027/fsv_con05_cont2_bg.jpg) no-repeat center 0;position: relative;}
@@ -302,7 +302,7 @@ letter-spacing: -0.4px; font-family: 'pretendard'; border-radius: 20px;position:
 .fsv_con05 .tag .roulette_num{font-size: 70px;color: #0035e2;position: absolute;top: 67px;left: 57px;font-weight: 900;font-family: 'pretendard';}
 .fsv_con05_cont2 .event_end{width: 540px;height: 700px;background: rgb(0 0 0 / 85%);border-radius: 50px;position: absolute;top: 140px;right: 280px;color: #fff;font-size: 40px;}
 .fsv_con05_cont2 .event_end strong{padding-top: 300px;display: inline-block;}
-/* ∑π¿ÃæÓ∆Àæ˜ */
+/* Î†àÏù¥Ïñ¥ÌåùÏóÖ */
 .fsv_con05 .layerPop {display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 100; text-align: center;}
 .fsv_con05 .layerPop .popInner { width:700px; margin: 50px auto 0; z-index: 999;  position: relative; text-align: left;}
 .fsv_con05 .layerPop .popInner .img img{width: 700px;}
@@ -314,7 +314,7 @@ letter-spacing: -0.4px; font-family: 'pretendard'; border-radius: 20px;position:
 .fsv_con05 .layerPop span { color:#0035e2;display: block;}
 .fsv_con05 .layerPop .gift{position: relative;}
 
-/* ≈«2 */
+/* ÌÉ≠2 */
 .fsv_con02 .prof_wrap{display: flex;width: 855px;justify-content: space-between;position: absolute;top: 421px;left: 116px;}
 .fsv_con02 .prof_wrap .prof:nth-child(3){margin-left: 21px;}
 .fsv_con02 .prof_wrap.Prof2{display: flex;width: 855px;justify-content: space-between;position: absolute;top: 687px;left: 116px;}
