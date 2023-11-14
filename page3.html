@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>메가랜드</title>
+	<meta charset="euc-kr" />
+	<meta name="author" content="메가랜드" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="content-type" content="text/html; charset=euc-kr" />
+	<meta http-equiv="cache-control" content="no-chche" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=1400, maximum-scale=1.5">
+	<link rel="shortcut icon" type="image/ico" href="http://www.megaland.co.kr/favicon.ico" />
+	<link type="text/css" rel="stylesheet" href="http://img.megaland.co.kr/common/css/common.css" />
+	<link type="text/css" rel="stylesheet" href="http://img.megaland.co.kr/common/css/layout.css" />
+	<script type="text/javascript" src="http://img.megaland.co.kr/common/js/common.js"></script>
+	<script type="text/javascript" src="http://img.megaland.co.kr/common/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="http://img.megaland.co.kr/common/js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="http://img.megaland.co.kr/common/js/jquery.bxslider.min.js"></script>
+	<!-- 추후 메가랜드 헤더에 공통으로 넣은 js/css입니다.-->
+	<link type="text/css" rel="stylesheet" href="http://www.megaland.co.kr/common/css/mega_bxslider_ui.css">
+	<script type="text/javascript" src="http://www.megaland.co.kr/common/js/mega_bxslider_ui.js"></script> 
+	<!-- //추후 메가랜드 헤더에 공통으로 넣은 js/css입니다.-->
+
+	<link rel="stylesheet" href="./fullservice.css"><!-- 풀서비스 css -->
+</head>
+<body>
+<div id="wrap">
+	<!-- HEADER / -->
+    <div id="header" style="height: 190px; background:#f3f3f5;">HEADER</div>
+	<!-- / HEADER -->
+
+	<div id="body">
+		<div class="container_full">
+			<!-- 34회 공인중개사 풀서비스 -->			
+			<script>
+				$(document).ready(function () {
+					// $('.fsv_lnb li a').on('click', function (e) {
+					// 	var targetId = $(this).attr("href");
+					// 	e.preventDefault();
+					// 	$(this).parent('li').siblings().removeClass('on');
+					// 	$(this).parent('li').addClass('on');
+					// 	$(targetId).addClass('on').siblings().removeClass('on');
+					// 	tableBlind_action();
+					// });
+
+					$('.js_tab_text li a').on('click', function (e) {
+						var targetId = $(this).attr("href");
+						e.preventDefault();
+						$(this).parent('li').siblings().removeClass('on');
+						$(this).parent('li').addClass('on');
+						$(targetId).addClass('on').siblings().removeClass('on');
+					});
+					
+				});
+				$(window).load(function(){
+					var containerTop = $('.container_full').offset().top+0;
+					$(window).scroll(function(){
+						if( $(window).scrollTop() >= containerTop ){  $('.floBnrWrap .floBnr').addClass('fixed');  }
+						else{  $('.floBnrWrap .floBnr').removeClass('fixed');  }
+					});
+
+					var conTop = $('#fsv').offset().top;
+						$(window).scroll(function(){
+							if( $(this).scrollTop() >= conTop ){
+								$('.fsv_lnb').addClass('fixed');
+							}else{
+								$('.fsv_lnb').removeClass('fixed');
+							}
+						});
+				});
+			</script>
+			
+			<!--팝업 : 해설강의 총평-->
+			<div class="fsv_lypop popup_more_box" id="popup_more">
+				<div class="popup_more_view">
+					<dl>
+						<dt>총평</dt>
+						<dd>
+							★ 민법의 흐름과 핵심을 잡는 실전에 강한 강의! 우승엽 교수님 ★<br>
+							합격의 필수 조건, 민법 문제풀이 강좌 소개<br>
+							<em>■ 확실한 문제풀이! 만점을 공략한다!!</em><br><br>
+							- 이론을 바탕으로 문제풀이에 응용하고 학습할 수 있도록 도와주는 강의<br>
+							- 시험문제의 출제 유형을 파악하여 고득점을 얻을 수 있는 강의<br>
+							<em>■ 확실한 문제풀이! 만점을 공략한다!!</em><br><br>
+							- 이론을 바탕으로 문제풀이에 응용하고 학습할 수 있도록 도와주는 강의<br>
+							- 시험문제의 출제 유형을 파악하여 고득점을 얻을 수 있는 강의<br>
+							<em>■ 확실한 문제풀이! 만점을 공략한다!!</em><br><br>
+							- 이론을 바탕으로 문제풀이에 응용하고 학습할 수 있도록 도와주는 강의<br>
+							- 시험문제의 출제 유형을 파악하여 고득점을 얻을 수 있는 강의<br>
+						</dd>
+					</dl>
+					<a href="javascript:;" onclick="$(this).parent().parent().fadeOut(200);" class="btn_popup_close">팝업닫기</a>
+				</div>
+				<span class="ly_dim" onclick="$(this).parent().fadeOut(200);"></span>
+			</div>
+			<script>
+				$(document).ready(function () {
+					$('#fsv .infobox .btn_more').click(function () {
+						$('#popup_more').fadeIn(150);
+					});
+				});
+			</script>
+			<!--//팝업 : 해설강의 총평 -->
+
+            <div id="fsv">
+				<div class="fsv_lnb">
+					<div class="tit"><img src="http://img.megaland.co.kr/full_service/2023/1027/lnb_tit.jpg" alt="메가랜드 채점 서비스"></div>
+					<ul>
+						<!-- 레이어 노출 : 2023.11.02 23:59:59 이후 비노출-->
+						<!-- <div class="lnb_lyr">11월3일<br>오픈 됩니다.</div> -->
+						<!--// 레이어 노출 : 2023.11.02 23:59:59 이후 비노출-->
+						<li class="tab1"><a href="./page.html">자동 채점 서비스</a></li>
+						<li class="tab2"><a href="./page.html">교수님의 메시지<br>&실시간 댓글</a></li>
+						<li class="tab3"><a href="./page.html">해설 강의</a></li>
+						<li class="tab4"><a href="./page.html">통계 분석</a></li>
+						<li class="tab5 on event_tab"><a href="#fsv_con05">선물 뽑기 EVENT</a></li>
+					</ul>
+				</div>
+				<div class="fsv_header event">					
+					<!--로그인전-->
+					<div class="fsv_login">
+						<a href="javascript:;" class="btn_small">로그인</a>
+						<a href="javascript:;" class="btn_small">회원가입</a>
+					</div>
+					
+					<!--로그인후-->
+					<!-- <div class="fsv_login">
+						<p class="myname_box">
+							<a href="#;" class="myname"><strong class="login_name">김메가님</strong></a>
+						</p>
+						<a href="#;" class="btn_small">로그아웃</a>
+					</div> -->
+					<a href="#;"><img src="http://img.megaland.co.kr/full_service/2021/1029/logo.png" alt="메가랜드" class="fsv_logo"></a>
+				</div>
+	
+                <div class="js_tab_con_type fsv_con05" id="fsv_con05">
+                    <div class="fsv_con05_top"><div class="inner"><img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_con05_top.jpg" alt=""></div></div>
+                    <div class="fsv_con05_cont1">
+                        <div class="inner">
+                            <img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_con05_cont1.jpg" alt="이벤트 참여방법" usemap="#btn_apply">
+                            <map name="btn_apply">
+                                <area shape="rect" coords="646,239,968,299" href="javascript:;" alt="자동 채점 서비스 참여하기">
+                                <area shape="rect" coords="648,343,968,405" href="javascript:;" alt="설문조사 참여하기">
+                                <area shape="rect" coords="646,447,968,507" href="javascript:;" alt="시험후기 댓글 작성하기">
+                            </map>
+                        </div>
+                    </div>
+                    <div class="fsv_con05_cont2">
+                        <div class="inner">
+                            <img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_con05_cont2.jpg" alt="" usemap="#btn_gift">
+                            <!-- 개인정보 동의 체크박스 -->
+                            <label class="checkbox">
+                                <input type="checkbox">&nbsp; 개인정보 활용 안내를 모두 확인하였고, 이에 동의합니다.
+                                <a href="javascript:;" class="info_view">내용보기 ></a>
+                            </label>
+                             <!-- 로그인 전 -->
+                             <div class="tag">
+                                <a href="javascript:;"><img src="http://img.megaland.co.kr/full_service/2023/1027/tag1.png" alt="로그인을해주세요"></a>
+                            </div>
+                            <!--// 로그인 전 -->
+                            <!-- 참여 기회 -->
+                            <div class="tag type2">
+                                <div class="count">
+                                    <img src="http://img.megaland.co.kr/full_service/2023/1027/tag3.png" alt="참여 기회">
+                                    <p class="roulette_num">1</p>
+                                </div>
+                                <a href="javascript:;" class="btn_pop"><img src="http://img.megaland.co.kr/full_service/2023/1027/tag2.png" alt="나의 당첨현황"></a>
+                            </div>
+                            <!--// 참여 기회 -->
+                            <map name="btn_gift">
+                                <area shape="rect" coords="390,870,711,953" href="javascript:;" onclick="$('#ly_gift').fadeIn();" alt="start">
+                            </map>								
+                            <!-- 당첨 레이어팝업 -->
+                            <div class="layerPop" id="ly_gift">
+                                <div class="popInner">
+                                    <!--  팝업내용  -->
+                                    <div class="img">
+                                        <!-- 쿠폰 이미지 -->
+                                        <div class="coupon_img">
+                                            <div class="gift">
+                                                <img src="http://img.megaland.co.kr/full_service/2023/1027/gift1.png" alt="신세계상품권 30만원권">
+                                                <p>축하드립니다.<span>신세계 상품권 30만원권</span>에 당첨되었습니다.</p>
+                                            </div>
+                                            <!-- <div class="gift">
+                                                <img src="http://img.megaland.co.kr/full_service/2023/1027/gift2.png" alt="신세계상품권 10만원권">
+                                                <p>축하드립니다.<span>신세계 상품권 10만원권</span>에 당첨되었습니다.</p>
+                                            </div> -->
+                                            <!-- <div class="gift">
+                                                <img src="http://img.megaland.co.kr/full_service/2023/1027/gift3.png" alt="올리브영">
+                                                <p>축하드립니다.<span>올리브영 상품권 5만원권</span>에 당첨되었습니다.</p>
+                                            </div> -->
+                                            <!-- <div class="gift">
+                                                <img src="http://img.megaland.co.kr/full_service/2023/1027/gift4.png" alt="영화관람권">
+                                                <p>축하드립니다.<span>롯데시네마 2인 이용권</span>에 당첨되었습니다.</p>
+                                            </div> -->
+                                            <!-- <div class="gift">
+                                                <img src="http://img.megaland.co.kr/full_service/2023/1027/gift5.png" alt="요기요">
+                                                <p>축하드립니다.<span>요기요 상품권 1만원권</span>에 당첨되었습니다.</p>
+                                            </div> -->
+                                            <!-- <div class="gift">
+                                                <img src="http://img.megaland.co.kr/full_service/2023/1027/gift6.png" alt="이디야">
+                                                <p>축하드립니다.<span>메가커피 아이스 아메리카노</span>에 당첨되었습니다.</p>
+                                            </div> -->
+                                            <!-- <div class="gift">
+                                                <img src="http://img.megaland.co.kr/full_service/2023/1027/gift7.png" alt="메가랜드 쿠폰">
+                                                <p>축하드립니다.<span>메가랜드 쿠폰</span>에 당첨되었습니다.</p>
+                                            </div> -->
+                                        </div>
+                                    </div>		
+                                    <a href="javascript:;" class="bt_popClose" onclick="$(this).parent().parent().fadeOut(100);">
+                                        <img src="http://img.megaland.co.kr/full_service/2023/1027/btn_pop_close.png" alt="확인">
+                                    </a>
+                                </div>
+                                <span class="ly_dim" onclick="$(this).parent().fadeOut(200);"></span>
+                            </div>
+                            <!-- // 당첨 레이어팝업 -->
+                            <!-- 마감 레이어 -->
+                            <!-- <div class="event_end">
+                                <strong>이벤트가<br>마감되었습니다.</strong>
+                            </div> -->
+                            
+                            <img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_con05_cont2-2.jpg" alt="유의사항" usemap="#btn_notice">								
+                            <map name="btn_notice">
+                                <area shape="rect" coords="575,285,688,317" href="javascript:;" alt="회원정보 확인하기">
+                            </map>
+                        </div>
+                    </div>
+                    <div class="fsv_con05_cont3">
+                        <div class="inner"><img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_con05_cont3.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div><!--//fsv-->
+
+			<script type="text/javascript">
+				//Tab
+				$(document).ready(function () {
+					$('.js_tab_type li a').on('click', function (e) {
+						var targetId = $(this).attr("href");
+						e.preventDefault();
+						$(this).parent('li').siblings().removeClass('on');
+						$(this).parent('li').addClass('on');
+						$(targetId).addClass('on').siblings().removeClass('on');
+						tableBlind_action();
+					});
+				});
+
+				//tab3- 통계 분석 :  블라인드 레이어
+				tableBlind_action(); // Table blind-layer 실행
+
+				function tableBlind_action(){
+					tableBlind( '#blind1', '#blind1_table' , '0', '1', '12', '2' );  //부동산학개론
+					tableBlind( '#blind2', '#blind2_table' , '0', '1', '20', '2' );  //민법 및 민사특별법
+					tableBlind( '#blind3', '#blind3_table' , '0', '1', '18', '2' );  //중개사법령 및 실무
+					tableBlind( '#blind4', '#blind4_table' , '0', '1', '7', '2' );  //부동산공법
+					tableBlind( '#blind5', '#blind5_table' , '0', '1', '10', '2' );  //부동산공시법
+					tableBlind( '#blind6', '#blind6_table' , '0', '1', '9', '2' );  //부동산세법
+				}
+
+				//Table blind-layer 함수
+				function tableBlind( layer, table, start_tr , start_td, end_tr , end_td ){
+					var $layer = $(layer);
+					var $table = $(table);
+					var $start = $table.find('tr:eq('+start_tr+') th:eq('+start_td+')')[0];   //th:eq -> td 기준이면 td:eq 로 변경
+					var $final = $table.find('tr:eq('+end_tr+') td:eq('+end_td+')')[0];
+
+					try {
+						$layer.css({
+							display: 'block',
+							top: $start.offsetTop ,
+							left: $start.offsetLeft ,
+							width: $final.offsetLeft - $start.offsetLeft + $final.offsetWidth ,
+							height: $final.offsetTop - $start.offsetTop + $final.offsetHeight
+						});
+					} catch (exception) { //에러 체크
+						console.log(  '매개 변수값이 제대로 전달되지 않음'  );
+					}
+				} //실행 예시:   $(window).on('load resize', function(){   tableBlind( '#Blind1', '#table1', '1', '0', '4', '2' );   });  //숫자순서: 시작tr, 시작td, 끝tr, 끝td
+
+			</script>
+			<!-- //34회 공인중개사 풀서비스 -->
+
+		</div>
+    </div>
+
+    <!-- BOTTOM -->
+	<!-- FOOTER / -->
+	<div id="foot" style="height: 203px; background:#f3f3f5;">FOOTER</div>
+	<!-- / FOOTER -->
+</div>
+</body>
+</html>
+<script type="text/javascript"> 
+	//Focus 함수
+	function fnSetFocus(type, type_nm, add_top) {
+		if (type.toUpperCase() != 'ID') {
+			var focus_id = '.'+ type_nm;
+		} else {
+			var focus_id = '#'+ type_nm;
+		}
+
+		//Target 고정 처리 S
+		var intOffset = $(focus_id).offset();   
+		var intOffsetTop = intOffset.top - add_top;
+		var intOffsetLeft = intOffset.left;
+
+		$('body, html').stop();
+		$('body, html').animate({ scrollTop: intOffsetTop }, "slow");
+		//Target 고정 처리 E
+	}
+	$(document).ready(function() {   
+		fnSetFocus( 'class' , 'container_full' , 0 );
+	});
+
+</script> 
