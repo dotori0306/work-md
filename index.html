@@ -1,387 +1,2768 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Î∞ïÌïòÎÇò Ìè¨Ìä∏Ìè¥Î¶¨Ïò§</title>
+	<title>∏ﬁ∞°∑£µÂ</title>
+	<meta charset="euc-kr" />
+	<meta name="author" content="∏ﬁ∞°∑£µÂ" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="content-type" content="text/html; charset=euc-kr" />
+	<meta http-equiv="cache-control" content="no-chche" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=1400, maximum-scale=1.5">
+	<link rel="shortcut icon" type="image/ico" href="http://www.megaland.co.kr/favicon.ico" />
+	<link type="text/css" rel="stylesheet" href="http://img.megaland.co.kr/common/css/common.css" />
+	<link type="text/css" rel="stylesheet" href="http://img.megaland.co.kr/common/css/layout.css" />
+	<script type="text/javascript" src="http://img.megaland.co.kr/common/js/common.js"></script>
+	<script type="text/javascript" src="http://img.megaland.co.kr/common/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="http://img.megaland.co.kr/common/js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="http://img.megaland.co.kr/common/js/jquery.bxslider.min.js"></script>
+	<!-- √ﬂ»ƒ ∏ﬁ∞°∑£µÂ «Ï¥ıø° ∞¯≈Î¿∏∑Œ ≥÷¿∫ js/css¿‘¥œ¥Ÿ.-->
+	<link type="text/css" rel="stylesheet" href="http://www.megaland.co.kr/common/css/mega_bxslider_ui.css">
+	<script type="text/javascript" src="http://www.megaland.co.kr/common/js/mega_bxslider_ui.js"></script> 
+	<!-- //√ﬂ»ƒ ∏ﬁ∞°∑£µÂ «Ï¥ıø° ∞¯≈Î¿∏∑Œ ≥÷¿∫ js/css¿‘¥œ¥Ÿ.-->
 
-    <link rel="icon" type="image/x-icon" href="./img/source-code-icon-152-213242.png">
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./css/styles.css">
-    
-
+	<link rel="stylesheet" href="./fullservice.css"><!-- «Æº≠∫ÒΩ∫ css -->
 </head>
 <body>
-    <header class="header">
-        <span class="guage"></span>
-        <div class="inner">
+<div id="wrap">
+	<div id="body">
+		<div class="container_full">
+			<!-- 34»∏ ∞¯¿Œ¡ﬂ∞≥ªÁ «Æº≠∫ÒΩ∫ -->			
+			<script>
+				$(document).ready(function () {
+					$('.fsv_lnb li a').on('click', function (e) {
+						var targetId = $(this).attr("href");
+						e.preventDefault();
+						$(this).parent('li').siblings().removeClass('on');
+						$(this).parent('li').addClass('on');
+						$(targetId).addClass('on').siblings().removeClass('on');
+						tableBlind_action();
+						window.scrollTo(0,0); //23.10.25
+					});
 
-            <h1 class="logo"><a href="">HANA's<br>portfolio</a></h1>
-            
-            <nav class="menu-area">
-                <a href="#main" class="link-project">
-                    <p class="link-active">${home}</p>
-                    <p class="link">${home}</p>
-                </a>
-                <a href="#work" class="link-about">
-                    <p class="link-active">${project}</p>
-                    <p class="link">${project}</p>
-                </a>
-                <a href="#contact" class="link-about">
-                    <p class="link-active">${contact}</p>
-                    <p class="link">${contact}</p>
-                </a>
-            </nav>
-        </div>
+					$('.js_tab_text li a').on('click', function (e) {
+						var targetId = $(this).attr("href");
+						e.preventDefault();
+						$(this).parent('li').siblings().removeClass('on');
+						$(this).parent('li').addClass('on');
+						$(targetId).addClass('on').siblings().removeClass('on');
+					});
+					
+				});
+				$(window).load(function(){
+					var containerTop = $('.container_full').offset().top+0;
+					$(window).scroll(function(){
+						if( $(window).scrollTop() >= containerTop ){  $('.floBnrWrap .floBnr').addClass('fixed');  }
+						else{  $('.floBnrWrap .floBnr').removeClass('fixed');  }
+					});
 
-    </header>
+					var conTop = $('#fsv').offset().top;
+						$(window).scroll(function(){
+							if( $(this).scrollTop() >= conTop ){
+								$('.fsv_lnb').addClass('fixed');
+							}else{
+								$('.fsv_lnb').removeClass('fixed');
+							}
+						});
+				});
+			</script>
+			
+			<!--∆Àæ˜ : «ÿº≥∞≠¿« √—∆Ú-->
+			<div class="fsv_lypop popup_more_box" id="popup_more">
+				<div class="popup_more_view">
+					<dl>
+						<dt>√—∆Ú</dt>
+						<dd>
+							°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+							«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+							<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+							- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+							- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«<br>
+							<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+							- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+							- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«<br>
+							<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+							- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+							- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«<br>
+						</dd>
+					</dl>
+					<a href="javascript:;" onclick="$(this).parent().parent().fadeOut(200);" class="btn_popup_close">∆Àæ˜¥›±‚</a>
+				</div>
+				<span class="ly_dim" onclick="$(this).parent().fadeOut(200);"></span>
+			</div>
+			<script>
+				$(document).ready(function () {
+					$('#fsv .infobox .btn_more').click(function () {
+						$('#popup_more').fadeIn(150);
+					});
+				});
+			</script>
+			<!--//∆Àæ˜ : «ÿº≥∞≠¿« √—∆Ú -->
 
-    <main class="main" id="main">
+            <div id="fsv">
+				<div class="fsv_lnb">
+					<div class="tit"><img src="http://img.megaland.co.kr/full_service/2023/1027/lnb_tit.jpg" alt="∏ﬁ∞°∑£µÂ √§¡° º≠∫ÒΩ∫"></div>
+					<ul>
+						<!-- ∑π¿ÃæÓ ≥Î√‚ : 2023.11.02 23:59:59 ¿Ã»ƒ ∫Ò≥Î√‚-->
+						<!-- <div class="lnb_lyr">11ø˘3¿œ<br>ø¿«¬ µÀ¥œ¥Ÿ.</div> -->
+						<!--// ∑π¿ÃæÓ ≥Î√‚ : 2023.11.02 23:59:59 ¿Ã»ƒ ∫Ò≥Î√‚-->
+						<li class="on tab1"><a href="#fsv_con01">¿⁄µø √§¡° º≠∫ÒΩ∫</a></li>
+						<li class="tab2"><a href="#fsv_con02">±≥ºˆ¥‘¿« ∏ﬁΩ√¡ˆ<br>&Ω«Ω√∞£ ¥Ò±€</a></li>
+						<li class="tab3"><a href="#fsv_con03">«ÿº≥ ∞≠¿«</a></li>
+						<li class="tab4"><a href="#fsv_con04">≈Î∞Ë ∫–ºÆ</a></li>
+						<li class="tab5 event_tab"><a href="#fsv_con05">º±π∞ ªÃ±‚ EVENT</a></li>
+					</ul>
+				</div>
+				<div class="fsv_header">					
+					<!--∑Œ±◊¿Œ¿¸-->
+					<div class="fsv_login">
+						<a href="javascript:;" class="btn_small">∑Œ±◊¿Œ</a>
+						<a href="javascript:;" class="btn_small">»∏ø¯∞°¿‘</a>
+					</div>
+					
+					<!--∑Œ±◊¿Œ»ƒ-->
+					<!-- <div class="fsv_login">
+						<p class="myname_box">
+							<a href="#;" class="myname"><strong class="login_name">±Ë∏ﬁ∞°¥‘</strong></a>
+						</p>
+						<a href="#;" class="btn_small">∑Œ±◊æ∆øÙ</a>
+					</div> -->
+					<a href="#;"><img src="http://img.megaland.co.kr/full_service/2021/1029/logo.png" alt="∏ﬁ∞°∑£µÂ" class="fsv_logo"></a>
+				</div>
+	
+				<div class="stn_tabwrap">
+					<!-- ≈«1 ¿⁄µø√§¡° -->
+					<div class="js_tab_con_type fsv_con01 on" id="fsv_con01">
+						<div class="fsv_top">
+							<div class="floBnrWrap">
+								<div class="floBnr">
+									<a href="javascript:;" onclick="fnGoEvent()" class="btn_event"><img src="//img.megaland.co.kr/full_service/2023/1027/fsv_flobnr.png" alt="º±π∞ ªÃ±‚ ¿Ã∫•∆Æ"></a>
+									<a href="javascipt:;" onclick="fnSetFocus('id','fsv',0)" class="btn_top"><img src="http://img.megaland.co.kr/full_service/2023/1027/top.png" alt="top"></a>
+								</div>
+							</div>
+							<div class="inner">
+								<img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_top.jpg" alt="∏ﬁ∞°∑£µÂ «Æº≠∫ÒΩ∫">
+								<img src="http://img.megaland.co.kr/full_service/2023/1027/top2.jpg" alt="¥ŸæÁ«— º≠∫ÒΩ∫øÕ «≥º∫«— ¿Ã∫•∆Æ∞° ¿÷¥¬ ∏ﬁ∞°∑£µÂøÕ «‘≤≤«œººø‰">
+							</div>
+						</div>
+						
+						<div class="fsv_con01" id="fsv_con01_1"><!-- 23.10.25 id √ﬂ∞°-->
+							<div class="inner">
+								<img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_cont1.jpg" alt="∏ﬁ∞°∑£µÂ ¿⁄µø √§¡° º≠∫ÒΩ∫">
+							</div>
+						</div>
 
-        <section class="sc-visual">
-            <div class="inner">
-                <div class="title-area">
-                    <h2 class="title">
-                        <span class="txt">I AM A</span>
-                        <span class="title-txt"></span>
-                        <span class="cursor">|</span>
-                    </h2>
-                </div>
-                <!-- <div class="sns-area">
-                    <a href="" class="link-instagram"><span class="blind">Ïù∏Ïä§ÌÉÄÍ∑∏Îû® Î∞îÎ°úÍ∞ÄÍ∏∞</span></a>
-                    <a href="" class="link-instagram"><span class="blind">Ïù∏Ïä§ÌÉÄÍ∑∏Îû® Î∞îÎ°úÍ∞ÄÍ∏∞</span></a>
-                    <a href="" class="link-instagram"><span class="blind">Ïù∏Ïä§ÌÉÄÍ∑∏Îû® Î∞îÎ°úÍ∞ÄÍ∏∞</span></a>
-                </div> -->
+						<div class="fsv_con0101">
+							<div class="inner">
+								<div class="notice_wrap">
+									<div class="notice_cont">
+										<h5>«Æº≠∫ÒΩ∫ Ω«Ω√∞£ ∞¯¡ˆªÁ«◊</h5>
+										<div class="notice_cont_inner">
+											<div class="txt">
+												∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚
+												<br><br>
+												∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚<br>
+												∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚<br>
+												∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚<br>
+												∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚<br>
+												∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚<br>
+												∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚<br>
+												∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¸∏Æ¿⁄ø°º≠ ¿‘∑¬«— ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚ ∞¯¡ˆªÁ«◊ ≥ªøÎ ≥Î√‚<br>
+											</div>
+										</div>
+									</div>
+									<div class="tcenter btn_down_wrap">
+										<a href="#;" class="btn_download">∞°¥‰æ» ¥ŸøÓ∑ŒµÂ</a>
+										<a href="#;" class="btn_download ml15">Ω√«Ë¡ˆ ¥ŸøÓ∑ŒµÂ</a>
+									</div>
+									<div class="desc_wrap">
+										<span class="desc">* ∞°¥‰æ» πﬂ«• ¿¸ ¥‰¿ª πÃ∏Æ µÓ∑œ«œΩ« ºˆ ¿÷Ω¿¥œ¥Ÿ. ¥‰¿ª º±µÓ∑œ «ÿ≥ı¿ª Ω√, √ﬂ»ƒ ∞°¥‰æ»¿Ã πﬂ«•µ«∏È ¿⁄µø¿∏∑Œ √§¡°¿Ã øœ∑·µÀ¥œ¥Ÿ.</p>
+										<span class="desc">* 1¬˜ ∞°¥‰æ» ø¿«¬ øπªÛ Ω√∞£ : 12Ω√ * 2¬˜ ∞°¥‰æ» ø¿«¬ øπªÛ Ω√∞£ : 17Ω√ 30∫–</p>
+										<span class="desc">* ¿⁄µø √§¡° º≠∫ÒΩ∫¥¬ 2023.11.17(±›) 23:59:59±Ó¡ˆ ¿ÃøÎ ∞°¥…«’¥œ¥Ÿ.</span>
+									</div>
+								</div>
+								
+								<!-- ¥‰æ»¿‘∑¬ -->
+								<div class="fsv_list_wrap">
+									<!-- ¿⁄µø √§¡°_∞°¥‰æ» µÓ∑œ¿¸ ªÛ≈¬ -->
+									<div class="left score_mark">
+										<div class="list_tit">1¬˜ Ω√«Ë</div>
+										<ul>
+											<li>
+												<b>∫ŒµøªÍ«–∞≥∑–</b>
+												<!-- <strong class="reserve">√§¡°<br>øπæ‡ øœ∑·</strong> -->
+												<a href="" class="btn_input">¥‰æ»¿‘∑¬«œ±‚</a>
+											</li>
+											<li>
+												<b>πŒπ˝ π◊<br>πŒªÁ∆Ø∫∞π˝</b>
+												<strong class="reserve">√§¡°<br>øπæ‡ øœ∑·</strong>
+												<a href="" class="btn_modify">¥‰æ»ºˆ¡§«œ±‚</a>
+											</li>
+										</ul>
+									</div>
+									<div class="right score_mark">
+										<div class="list_tit type2">2¬˜ Ω√«Ë</div>
+										<ul>
+											<li>
+												<b>¡ﬂ∞≥ªÁπ˝∑…<br>π◊ Ω«π´</b>
+												<!-- <strong class="reserve">√§¡°<br>øπæ‡ øœ∑·</strong> -->
+												<a href="" class="btn_input">¥‰æ»¿‘∑¬«œ±‚</a>
+											</li>
+											<li>
+												<b>∫ŒµøªÍ ∞¯π˝</b>
+												<strong class="reserve">√§¡°<br>øπæ‡ øœ∑·</strong>
+												<a href="" class="btn_modify">¥‰æ»ºˆ¡§«œ±‚</a>
+											</li>
+											<li>
+												<b>∫ŒµøªÍ<br>∞¯Ω√π˝/ººπ˝</b>
+												<strong class="reserve">√§¡°<br>øπæ‡ øœ∑·</strong>
+												<a href="" class="btn_modify">¥‰æ»ºˆ¡§«œ±‚</a>
+											</li>
+										</ul>
+									</div>
+									<!--// ¿⁄µø √§¡°_∞°¥‰æ» µÓ∑œ¿¸ ªÛ≈¬ -->
 
-                <div class="bg-area"></div>
-            </div>
-        </section>
+									<!-- ¿⁄µø √§¡°_∞°¥‰æ» µÓ∑œ»ƒ ªÛ≈¬ -->
+									<div class="left score_mark">
+										<div class="list_tit">1¬˜ Ω√«Ë</div>
+										<ul>
+											<li>
+												<b>∫ŒµøªÍ«–∞≥∑–</b>
+												<strong class="score">65.5</strong>
+												<a href="" class="btn_remark">¿Á√§¡°«œ±‚</a>
+											</li>
+											<li>
+												<b>πŒπ˝ π◊<br>πŒªÁ∆Ø∫∞π˝</b>
+												<!-- <strong class="score">65.5</strong> -->
+												<a href="" class="btn_mark">√§¡°«œ±‚</a>
+											</li>
+										</ul>
+									</div>
+									<div class="right score_mark">
+										<div class="list_tit type2">2¬˜ Ω√«Ë</div>
+										<ul>
+											<li>
+												<b>¡ﬂ∞≥ªÁπ˝∑…<br>π◊ Ω«π´</b>
+												<!-- <strong class="score">65.5</strong> -->
+												<a href="" class="btn_mark">√§¡°«œ±‚</a>
+											</li>
+											<li>
+												<b>∫ŒµøªÍ ∞¯π˝</b>
+												<strong class="score">99.9</strong>
+												<a href="" class="btn_remark">¿Á√§¡°«œ±‚</a>
+											</li>
+											<li>
+												<b>∫ŒµøªÍ<br>∞¯Ω√π˝/ººπ˝</b>
+												<!-- <strong class="score">65.5</strong> -->
+												<a href="" class="√§¡°«œ±‚">√§¡°«œ±‚</a>
+											</li>
+										</ul>
+									</div>
+									<!--// ¿⁄µø √§¡°_∞°¥‰æ» µÓ∑œ»ƒ ªÛ≈¬ -->
 
+									<!-- º≠∫ÒΩ∫ ∏∂∞® »ƒ ªÛ≈¬ -->
+									<div class="left score_mark">
+										<div class="list_tit">1¬˜ Ω√«Ë</div>
+										<ul>
+											<li>
+												<b>∫ŒµøªÍ«–∞≥∑–</b>
+												<strong class="score">65.5</strong>
+												<a href="" class="btn_remark">¿Á√§¡°«œ±‚</a>
+											</li>
+											<li>
+												<b>πŒπ˝ π◊<br>πŒªÁ∆Ø∫∞π˝</b>
+												<!-- <strong class="score">65.5</strong> -->
+												<strong class="reserve">√§¡°<br>øπæ‡ øœ∑·</strong>
+												<a href="" class="btn_modify">¥‰æ»ºˆ¡§«œ±‚</a>
+											</li>
+										</ul>
+									</div>
+									<div class="right score_mark">
+										<div class="list_tit type2">2¬˜ Ω√«Ë</div>
+										<ul>
+											<li>
+												<b>¡ﬂ∞≥ªÁπ˝∑…<br>π◊ Ω«π´</b>
+												<!-- <strong class="score">65.5</strong> -->
+												<strong class="reserve">√§¡°<br>øπæ‡ øœ∑·</strong>
+												<a href="" class="btn_modify">¥‰æ»ºˆ¡§«œ±‚</a>
+											</li>
+											<li>
+												<b>∫ŒµøªÍ ∞¯π˝</b>
+												<strong class="score">99.9</strong>
+												<a href="" class="btn_remark">¿Á√§¡°«œ±‚</a>
+											</li>
+											<li>
+												<b>∫ŒµøªÍ<br>∞¯Ω√π˝/ººπ˝</b>
+												<!-- <strong class="score">65.5</strong> -->
+												<strong class="reserve">√§¡°<br>øπæ‡ øœ∑·</strong>
+												<a href="" class="btn_modify">¥‰æ»ºˆ¡§«œ±‚</a>
+											</li>
+										</ul>
+									</div>
+									<!--// º≠∫ÒΩ∫ ∏∂∞® »ƒ ªÛ≈¬ -->
+								</div>
+								<!-- //¥‰æ»¿‘∑¬ -->
+								<!--√§¡°∞·∞˙ Start-->
+								<ul class="result_wrap">
+									<li class="txt">
+										<div>
+											¿Ã∏ﬁ∞° »∏ø¯¥‘¿«<br>√§¡°∞·∞˙
+										</div>
+									</li>
+									<!--1¬˜Ω√«Ë-->
+									<li class="result">
+										<div>
+											<p class="t1">1¬˜ Ω√«Ë ∆Ú±’</p>
+											<strong class="t2">65.25</strong><strong class="t3">¡°</strong>
 
-        
+											<!-- «’∞› µµ¿Â -->
+											<!-- <p class="pass_tag"><img class="label1" src="http://img.megaland.co.kr/full_service/2023/1027/ico_pass.png" alt="«’∞›"></p> -->
 
-        <section class="sc-works" id="work">
+											<!-- ºˆ∞≠∞˙∏Ò µ¸¡ˆ -->
+											<p class="result_tag">
+												<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/label_rcmd_2.png" alt="2023 ∏ﬁ∞°∑£µÂ √•¿”∂•"></a>
+												<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/label_rcmd_3.png" alt="2023 2Ω√∞£ µø¬˜«’∞›∂•"></a>
+											</p>
+										</div>
+									</li>
+									<!--//1¬˜Ω√«Ë-->
+									<!--1¬˜Ω√«Ë πÃ¿¿Ω√-->
+									<!-- <li class="result" style="display: block;">
+										<div>
+											<p class="t1">1¬˜ Ω√«Ë </p>
+											<strong class="t4 mark14">πÃ¿¿Ω√</strong>
+										</div>
+									</li> -->
+									<!--//1¬˜Ω√«Ë πÃ¿¿Ω√-->
+									<!--2¬˜Ω√«Ë-->
+									<li class="result">
+										<div>
+											<p class="t1">2¬˜ Ω√«Ë ∆Ú±’</p>
+											<strong class="t2">65.25</strong><strong class="t3">¡°</strong>
+											
+											<!-- «’∞› µµ¿Â -->
+											<p class="pass_tag type2"><img class="label1" src="http://img.megaland.co.kr/full_service/2023/1027/ico_pass2.png" alt="«’∞›"></p>
 
-            
-            <div class="grid-area">
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="cont andar" data-fade>
-                    <a href="https://www.megals.co.kr/prof/event/prof_evt_331.asp" target="_blank">
-                        <div class="img-wrap">
-                            <img src="./img/works-md.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="grid"></div>
-                <div class="cont nb" data-fade>
-                    <a href="https://dotori0306.github.io/newbalance/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="./img/works-nb.gif" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="cont cityhall" data-fade>
-                    <a href="https://dotori0306.github.io/seoul-city-hall/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="./img/works-cityhall.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="grid"></div>
-                <div class="grid"></div>               
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>            
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="cont imdak" data-fade>
-                    <a href="https://dotori0306.github.io/imdak/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="./img/works-imdak.jpg" alt="">
-                        </div>
-                    </a>
-                </div>                            
-                <div class="grid"></div>
-                <div class="cont bm" data-fade>
-                    <a href="https://dotori0306.github.io/bm/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="./img/works-bm.png" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>                   
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="cont toss" data-fade>
-                    <a href="https://dotori0306.github.io/toss/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="./img/works-toss.png" alt="">
-                        </div>
-                    </a>
-                </div>                
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>   
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>   
-                <div class="grid"></div>   
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-                <div class="grid"></div>   
-                <div class="grid"></div>
-            </div>
+											<!-- ºˆ∞≠∞˙∏Ò µ¸¡ˆ -->
+												<!-- ºˆ∞≠∞˙∏Ò µ¸¡ˆ -->
+												<!-- <p class="result_tag">
+													<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/label_rcmd_1.png" alt="2023 2¬˜ «’∞›∂•"></a>
+													<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/label_rcmd_2.png" alt="2023 ∏ﬁ∞°∑£µÂ √•¿”∂•"></a>
+													<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/label_rcmd_3.png" alt="2023 2Ω√∞£ µø¬˜«’∞›∂•"></a>
+												</p> -->
 
-            <div class="bg-area-blue">FEATURED<br>WORKS</div>
+											<!-- √÷¡æ«’∞› µ¸¡ˆ -->
+											<p class="result_tag">
+												<a href="javascript:;"  onclick="$('.popup_pass').fadeIn();">
+													<img src="http://img.megaland.co.kr/full_service/2023/1027/label_rcmd_5.png" alt="«’∞›¿ª √‡«œ«’¥œ¥Ÿ! ¿Ã¡¶¥¬ Ω«¿¸ ¡ÿ∫Ò! Ω√≈©∏¥ º±π∞πﬁ±‚">
+												</a>
+											</p>
+											
+										</div>
+									</li>
+									<!--//2¬˜Ω√«Ë-->
+									<!--2¬˜Ω√«Ë πÃ¿¿Ω√-->
+									<li class="result" style="display: none;">
+										<div>
+											<p class="t1">2¬˜ Ω√«Ë </p>
+											<strong class="t4 mark14">πÃ¿¿Ω√</strong>
+										</div>
+									</li>
+									<!--//2¬˜Ω√«Ë πÃ¿¿Ω√-->
+								</ul>
+								<!--//√§¡°∞·∞˙ End-->
+								
+								<a href="javascript:;" onclick="fnGoEvent()" class="btn_bnr"><img src="http://img.megaland.co.kr/full_service/2023/1027/mark_bnr.png" alt="¿⁄µø √§¡° øœ∑·Ω√ º±π∞ ªÃ±‚ ¿Ã∫•∆Æ ¿¿∏±« 1¿Â¿Ã ¡ˆ±ﬁµÀ¥œ¥Ÿ"></a>
+							</div>
 
-            <div class="bg-area-big-blue"></div>
+							<!-- ∆Àæ˜ : «’∞›√‡«œ ∑π¿ÃæÓ∆Àæ˜ -->
+							<div class="fsv_lypop popup_pass" style="display: none;">
+								<div class="popInner">
+									<img src="http://img.megaland.co.kr/full_service/2023/1027/popup.png" alt="34»∏ ∞¯¿Œ¡ﬂ∞≥ªÁ ø©∑Ø∫–! √‡«œ«’¥œ¥Ÿ" usemap="#fsv_con01_lyr">
+									<map name="fsv_con01_lyr">
+										<area shape="rect" coords="72,149,570,201" href="#;" alt="30∏∏ø¯ ªÛ¥Á «“¿Œ∞° ±∏∏≈«œ±‚">
+										<area shape="rect" coords="73,551,569,602" href="#;" alt="∆Ø∞≠ ¡ˆ±ﬁ πﬁ±‚">
+									</map>
+									<a class="bt_popClose1" href="javascript:;" onclick="$(this).parent().parent().fadeOut();" style="position: absolute; top:7px; right:7px;">
+										<img src="http://img.megaland.co.kr/icon/btn_close.png" alt="¥›±‚">	
+									</a>
+								</div>
+								<span class="ly_dim" onclick="$(this).parent().fadeOut();"></span>
+							</div>
+							<!-- //∆Àæ˜ : «’∞›√‡«œ ∑π¿ÃæÓ∆Àæ˜ -->
+						</div>
 
-            
-        </section>
-    </main>
+						<div class="fsv_con0102" id="fsv_con0102"><!-- 23.10.25 id √ﬂ∞° -->
+							<div class="inner">
+								<img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_cont2.jpg" alt="≥≠¿Ãµµ º≥πÆ¡∂ªÁ">
+								<a href="javascript:;" onclick="fnGoEvent()" class="btn_bnr"><img src="http://img.megaland.co.kr/full_service/2023/1027/survey_bnr.png" alt="¿Ã∫•∆Æ ∆‰¿Ã¡ˆ πŸ∑Œ∞°±‚"></a>
+								<a href="" class="btn_survey"><img src="http://img.megaland.co.kr/full_service/2023/1027/btn_survey.png" alt="º≥πÆ¡∂ªÁ ¬¸ø©«œ±‚"></a>
 
-    <footer class="footer" id="contact">
-        <div class="contact-area">
-            <div class="contact-wrap">
-                <div class="contact-list">
-                    <a href="mailto:phn306@gmail.com">
-                        <p class="link-active">PHN306@GMAIL.COM</p>
-                        <p class="link">PHN306@GMAIL.COM</p>
-                    </a>
-                    <a href="tel:+82 10-3262-4979">
-                        <p class="link-active">+82 10 3262 4979</p>
-                        <p class="link">+82 10 3262 4979</p>
-                    </a>
-                    <a href="mailto:phn306@gmail.com">
-                        <p class="link-active">PHN306@GMAIL.COM</p>
-                        <p class="link">PHN306@GMAIL.COM</p>
-                    </a>
-                    <a href="tel:+82 10-3262-4979">
-                        <p class="link-active">+82 10 3262 4979</p>
-                        <p class="link">+82 10 3262 4979</p>
-                    </a>
-                </div>
-                <div class="contact-list">
-                    <a href="mailto:phn306@gmail.com">
-                        <p class="link-active">PHN306@GMAIL.COM</p>
-                        <p class="link">PHN306@GMAIL.COM</p>
-                    </a>
-                    <a href="tel:+82 10-3262-4979">
-                        <p class="link-active">+82 10 3262 4979</p>
-                        <p class="link">+82 10 3262 4979</p>
-                    </a>
-                    <a href="mailto:phn306@gmail.com">
-                        <p class="link-active">PHN306@GMAIL.COM</p>
-                        <p class="link">PHN306@GMAIL.COM</p>
-                    </a>
-                    <a href="tel:+82 10-3262-4979">
-                        <p class="link-active">+82 10 3262 4979</p>
-                        <p class="link">+82 10 3262 4979</p>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
+								<div class="survey">
+									<p class="titarea">
+										<img src="http://img.megaland.co.kr/full_service/2020/1030/title_01.png" alt="∞˙∏Ò∫∞ ≥≠¿Ãµµ º≥πÆ ∞·∞˙ ∫∏±‚">
+										<span>«ˆ¿Á, ∞·∞˙∞° Ω«Ω√∞£ æ˜µ•¿Ã∆Æ µ«∞Ì ¿÷Ω¿¥œ¥Ÿ!</span>
+									</p>
+									<div class="clearfix">
+										<div class="tbl20 fleft level_result">
+											<table>
+												<colgroup>
+													<col>
+													<col span="5" style="width: 14%;">
+												</colgroup>
+												<thead>
+												<tr>
+													<th>∞˙∏Ò / ≥≠¿Ãµµ</th>
+													<th>∏≈øÏ<br>æÓ∑¡øÚ</th>
+													<th>æÓ∑¡øÚ</th>
+													<th>∫∏≈Î</th>
+													<th>Ω¨øÚ</th>
+													<th>∏≈øÏ Ω¨øÚ</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<th>∫ŒµøªÍ«–∞≥∑–</th>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+												</tr>
+												<tr>
+													<th>πŒπ˝ π◊ πŒªÁ∆Ø∫∞π˝</th>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+												</tr>
+												<tr>
+													<th>∫ŒµøªÍ∞¯π˝</th>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+												</tr>
+												<tr>
+													<th>¡ﬂ∞≥ªÁπ˝∑… π◊ Ω«π´</th>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+												</tr>
+												<tr>
+													<th>∫ŒµøªÍ∞¯Ω√π˝</th>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+												</tr>
+												<tr>
+													<th>∫ŒµøªÍººπ˝</th>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+													<td>00%</td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="graph fright">
+											<!--±◊∑°«¡ øµø™-->
+											<img src="http://img.megaland.co.kr/full_service/2021/1029/graph.jpg" alt="±◊∑°«¡ µÈæÓ∞°¥¬∞˜ - ¿”Ω√¿ÃπÃ¡ˆ">
+											<!--
+											±◊∑°«¡ ªÁ¿Ã¡Ó
+											width: 471px; height: 342px;  (≥Ù¿Ã∞™ ƒø¡ˆ∏È, øﬁ¬  table height µµ ∞∞¿Ã ∫Ø∞Ê)
 
-        <p class="copyright">¬© 2022 HANA PARK</p>
+											±◊∑°«¡ ƒ√∑Ø∞™
+											#c6d200
+											#00de68
+											#398ffa
+											#7a4ff6
+											#c250cf
+											 -->
+											<!--//±◊∑°«¡ øµø™-->
+										</div>
+									</div>
+									
+									<p class="titarea mt60">
+										<img src="http://img.megaland.co.kr/full_service/2019/1024/title_02.png" alt="∏ﬁ∞°∑£µÂ Ω«Ω√∞£ «’∞›°§∫“«’∞› øπ√¯">
+										<span>«ˆ¿Á, ∞·∞˙∞° Ω«Ω√∞£ æ˜µ•¿Ã∆Æ µ«∞Ì ¿÷Ω¿¥œ¥Ÿ!</span>
+									</p>
+									<div class="tbl20">
+										<table>
+											<colgroup>
+												<col span="6" style="width: 16.6666%;">
+											</colgroup>
+											<thead>
+											<tr>
+												<th colspan="2" class="bdr_2">µø¬˜</th>
+												<th colspan="2" class="bdr_2">1¬˜</th>
+												<th colspan="2">2¬˜</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<th>«’∞›</th>
+												<th class=" bdr_2">∫“«’∞›</th>
+												<th>«’∞›</th>
+												<th class=" bdr_2">∫“«’∞›</th>
+												<th>«’∞›</th>
+												<th>∫“«’∞›</th>
+											</tr>
+											<tr>
+												<td>00%</td>
+												<td class="bdr_2">00%</td>
+												<td>00%</td>
+												<td class="bdr_2">00%</td>
+												<td>00%</td>
+												<td>00%</td>
+											</tr>
+											</tbody>
+										</table>
+									</div>
+									<p class="mt10 mark9 f12">°ÿ «ÿ¥Á «’∞›, ∫“«’∞› ∫–∆˜ µ•¿Ã≈Õ¥¬ ∏ﬁ∞°∑£µÂ »∏ø¯ ¥ÎªÛ¿∏∑Œ∏∏ √Î«’«— ∞·∞˙¿Ãπ«∑Œ Ω«¡¶øÕ¥¬ ¥Ÿ∏¶ ºˆ ¿÷Ω¿¥œ¥Ÿ.</p>
 
-    </footer>
+									<!-- º≥πÆ ∞·∞˙ ∫∏±‚ ∑π¿ÃæÓ -->
+									<div class="result_layer bold tcenter" style="font-size: 30px;color: #fff;line-height: 360px;">10/28(≈‰) ø¿»ƒ 5Ω√ø° ∞¯∞≥µÀ¥œ¥Ÿ.</div>
+								</div>
+							</div>
+						</div>
 
+						<div class="stn_bottom">
+							<div class="inner">
+								<img src="http://img.megaland.co.kr/full_service/2022/1027/fsv_bottom.jpg" alt="ΩΩ∑Œ∞«">
+							</div>
+						</div>
+					</div>
+					<!--// ≈«1 ¿⁄µø√§¡° -->
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+					<!-- ≈«2 -->
+					<div class="js_tab_con_type fsv_con02" id="fsv_con02">
+						<div class="floBnrWrap">
+							<div class="floBnr">
+								<a href="javascript:;" onclick="fnGoEvent()" class="btn_event"><img src="//img.megaland.co.kr/full_service/2023/1027/fsv_flobnr.png" alt="º±π∞ ªÃ±‚ ¿Ã∫•∆Æ"></a>
+								<a href="javascipt:;" onclick="fnSetFocus('id','fsv',0)" class="btn_top"><img src="http://img.megaland.co.kr/full_service/2023/1027/top.png" alt="top"></a>
+							</div>
+						</div>
+						<div class="inner">
+							<img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_cont3.jpg" alt="ºˆ«Ëª˝ ø©∑Ø∫– ¡§∏ª ºˆ∞Ì ∏π¿∏ºÃΩ¿¥œ¥Ÿ">
+							<div class="prof_wrap Prof1">
+								<div class="prof">
+									<img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img1.png" alt="¿Ã¡æ»£">
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img1_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="¿Ã¡æ»£ ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+								<div class="prof">
+									<a href="javascript:;" onclick="fnPlayMovie('51AWAaTW-6I');" class="btn_mov"><img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img2.png" alt="»≤¿Áø¯ øµªÛ"></a>
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img2_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="»≤¿Áø¯ ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+								<div class="prof">
+									<a href="javascript:;" onclick="fnPlayMovie('51AWAaTW-6I');" class="btn_mov"><img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img3.png" alt="º≠ºÆ¡¯ øµªÛ"></a>
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img3_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="º≠ºÆ¡¯ ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+								<div class="prof">
+									<img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img4.png" alt="¡§µøº∑">
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img4_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="¡§µøº∑ ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+								<div class="prof">
+									<img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img5.png" alt="√§»Ò¥Î">
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img5_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="√§»Ò¥Î ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+							</div>
+							<div class="prof_wrap Prof2">
+								<div class="prof">
+									<img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img6.png" alt="±ËªÛ¡¯">
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img6_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="±ËªÛ¡¯ ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+								<div class="prof">
+									<img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img7.png" alt="»≤¡§º±">
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img7_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="»≤¡§º± ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+								<div class="prof">
+									<img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img8.png" alt="∞ÌªÛ√∂">
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img8_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="∞ÌªÛ√∂ ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+								<div class="prof">
+									<a href="javascript:;" onclick="fnPlayMovie('51AWAaTW-6I');" class="btn_mov"><img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img9.png" alt="±Ë»ÒªÛ øµªÛ"></a>
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img9_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="±Ë»ÒªÛ ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+								<div class="prof">
+									<img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img10.png" alt="¿ÃªÛ∞Ô">
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img10_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="¿ÃªÛ∞Ô ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+							</div>
+							<div class="prof_wrap Prof3">
+								<div class="prof">
+									<img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img11.png" alt="±Ë∫¥∑ƒ">
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img11_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="±Ë∫¥∑ƒ ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+								<div class="prof">
+									<a href="javascript:;" onclick="fnPlayMovie('51AWAaTW-6I');" class="btn_mov"><img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img12.png" alt="∏Ò»Òºˆ øµªÛ"></a>
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img12_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="∏Ò»Òºˆ ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+								<div class="prof">
+									<img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img13.png" alt="πËªÛøÎ">
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img13_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="πËªÛøÎ ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+								<div class="prof">
+									<img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img14.png" alt="¿Ãº€ø¯">
+									<a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img14_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="¿Ãº€ø¯ ∏ﬁΩ√¡ˆ">
+									</a>
+								</div>
+								<div class="prof">
+									<a href="javascript:;" onclick="fnPlayMovie('51AWAaTW-6I');" class="btn_mov"><img src="http://img.megaland.co.kr/full_service/2023/1027/prof_img15.png" alt="¿”±‚ø¯ øµªÛ"></a>
+                                    <a href="javascript:;" class="btn_message" onclick="layerPopupOpen('http://img.megaland.co.kr/full_service/2023/1027/prof_img15_letter.png')">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_message.png" alt="¿”±‚ø¯ ∏ﬁΩ√¡ˆ"></a>
+									</a>
+								</div>
+							</div>
+							<!-- øµªÛ ∆Àæ˜ -->
+							<div id="layerPop" style="display: none; position: absolute; left: 50%; top: 0; z-index: 9999; width: 854px; height: 480px; margin-left: -385px; ">
+								<div style="position: relative; z-index: 1;">
+									<iframe style="width: 854px; height: 480px; vertical-align: top;" src="" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" id="player_youtube" name="playerFrm"></iframe>
+									<a style="position: absolute; right: -40px; top: 0; z-index: 2;" href="javascript:;" onclick="fnPlayMovie('99');">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_close.png" alt="¥›±‚">
+									</a>
+								</div>
+								<div id="dimLayer" style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,.5);" onclick="fnPlayMovie('99');"></div>
+							</div>
+							<!-- //øµªÛ ∆Àæ˜ -->
+							<!-- ∏ﬁΩ√¡ˆ ∆Àæ˜ -->
+                            <div id="layerPopImg" style="display: none; position: absolute; left: 0; top: 0px; z-index: 50; width: 100%; text-align: center;">
+                                <div style="position:relative;display: inline-block; z-index: 1;box-shadow: 26px 38px 26px 0 rgba(0, 0, 0, .3);">
+                                    <img id="imgs" src="" alt=".">
+                                    <a style="position: absolute; right: 20px; top: 10px; z-index: 2;" href="javascript:;" onclick="layerPopupOpen('no');">
+                                        <img src="http://img.megaland.co.kr/full_service/2023/1027/btn_close.png" alt="¥›±‚">
+                                    </a>
+                                </div>
+								<span class="ly_dim" onclick="$(this).parent().fadeOut(100);" style="position: fixed; left: 0; top: 0;width: 100%; height: 100%; background: rgba(0,0,0,.5)"></span>
+                            </div>
+							<!--// ∏ﬁΩ√¡ˆ ∆Àæ˜ -->
+                            <script type="text/javascript">
+                                function layerPopupOpen(imgurl){
+                                var position_top = $(this).scrollTop()-100;   //∑π¿ÃæÓ top ¿ßƒ°
+                                var imgsrc = imgurl
+                            
+                                $('#layerPopImg').css({ top : position_top });
+                                if( imgsrc == 'no' ){
+                                    //∑π¿ÃæÓ ¥›±‚
+                                    $('#layerPopImg').fadeOut(0);
+                                    $('#imgs').attr('src', '');
+                                }else{
+                                    //∑π¿ÃæÓ ø≠±‚
+                                    $('#layerPopImg').fadeIn(300);
+                                    $('.ly_dim').fadeIn(300);
+                                    $('#imgs').attr('src', imgsrc);
+                                }
+                            }
+							//∑π¿ÃæÓ∆Àæ˜ : øµªÛ
+							function fnPlayMovie(vod_code){
+								var position_top = $(this).scrollTop()-100;   //∑π¿ÃæÓ top ¿ßƒ°
+								$('#layerPop').css({ top : position_top });
+								url_text = encodeURI('https://www.youtube.com/embed/'+vod_code+'?autoplay=1&vq=hd1080&rel=0&start=0');
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EasePack.min.js"></script>
+								if (vod_code == 99){
+									$('#layerPop').fadeOut();
+									$('#player_youtube').attr('src', '');
+								} else {
+									$('#layerPop').fadeIn();
+									$('#player_youtube').attr('src', url_text);
+								}
+							}
+							</script>
+						</div>
+						<div class="fsv_con0104">
+							<div class="inner">
+								<div class="comment_wrap">
+									<h5>Ω√«Ë»ƒ±‚</h5>
+									<span class="desc">ø©∑Ø∫–¿« ª˝ª˝«— Ω√«Ë »ƒ±‚∏¶ µÈ∑¡¡÷ººø‰!</span>
+									<div class="input">
+										<textarea placeholder="ø©∑Ø∫–¿« ﬂÊﬂÊ«— Ω√«Ë »ƒ±‚∏¶ ∞¯¿Ø«ÿ¡÷ººø‰! (√÷¥Î 500¿⁄)" maxlength="500"></textarea>
+										<a class="btn_appl" href="javascript:;">¿‘∑¬«œ±‚</a>
+									</div>
+									<p class="desc mt20">°ÿ ¡ˆ≥™ƒ£ µµπË, øÂº≥, ¡÷¡¶øÕ ªÛ∞¸æ¯¥¬ ±€¿∫ øπ∞Ìæ¯¿Ã ∞¸∏Æ¿⁄ø° ¿««ÿ ªË¡¶µ… ºˆ ¿÷Ω¿¥œ¥Ÿ.</p>
+									<p class="desc">°ÿ µÓ∑œ¿Ã øœ∑·µ» ¥Ò±€¿∫ ªË¡¶∞° ∫“∞°«œø¿¥œ Ω≈¡ﬂ«œ∞‘ ¿€º∫«ÿ¡÷Ω√±‚ πŸ∂¯¥œ¥Ÿ.</p>
+									<p class="desc">°ÿ ¥Ò±€ ¿€º∫ ∞≥ºˆ ¡¶«—¿∫ æ¯¿∏≥™, ¿Ã∫•∆Æ ¿¿∏±«¿∫ æ∆¿Ãµ ¥Á 1¿Â∏∏ ¡ˆ±ﬁµÀ¥œ¥Ÿ.</p>
+								</div>
+								<a href="javascript:;" onclick="fnGoEvent()" class="btn_bnr"><img src="http://img.megaland.co.kr/full_service/2023/1027/comment_bnr.png" alt="¿Ã∫•∆Æ ∆‰¿Ã¡ˆ πŸ∑Œ∞°±‚"></a>
+								<!-- ƒ⁄∏‡∆Æ ∏ÆΩ∫∆Æ -->
+								<table class="tbl01 mt60">
+									<colgroup>
+										<col style="width:7%">
+										<col style="width:10%">
+										<col style="width:80%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th>π¯»£</th>
+											<th>¿€º∫¿⁄</th>
+											<th>≥ªøÎ</th>
+										</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td class="">8</td>
+										<td>π⁄OO</td>
+										<td class="tleft" style="text-align:left">33»∏ ∞¯¿Œ¡ﬂ∞≥ªÁ Ω√«Ë ≥ π´ æÓ∑¡ø¸Ω¿¥œ¥Ÿ.. ø√«ÿ ∏ﬁ∞°∑£µÂ æ∆¥œæ˙¿∏∏È Ω√«Ë¿ª ∏¡ƒ• ª∑«ﬂ≥◊ø‰ §– ¡¶πﬂ ∞¯π˝ ∞˙∂Ù∏∏ ∏È«ﬂ¿∏∏È «’¥œ¥Ÿ..33»∏ ∞¯¿Œ¡ﬂ∞≥ªÁ Ω√«Ë ≥ π´ æÓ∑¡ø¸Ω¿¥œ¥Ÿ.. ø√«ÿ ∏ﬁ∞°∑£µÂ æ∆¥œæ˙¿∏∏È Ω√«Ë¿ª ∏¡ƒ• ª∑«ﬂ≥◊ø‰ §– ¡¶πﬂ ∞¯π˝ ∞˙∂Ù∏∏ ∏È«ﬂ¿∏∏È «’¥œ¥Ÿ..</td>
+									</tr>
+									<tr>
+										<td class="">7</td>
+										<td>π⁄OO</td>
+										<td class="tleft" style="text-align:left">√§»Ò¥Î ±≥ºˆ¥‘ ¥ˆ∫–ø° πŒπ˝ ∞‹øÏ ªÏæ“Ω¿¥œ¥Ÿ. ∞®ªÁ«’¥œ¥Ÿ!
+										</td>
+									</tr>
+									<tr>
+										<td class="">6</td>
+										<td>π⁄OO</td>
+										<td class="tleft" style="text-align:left">≥ª≥‚¿ª ¡ÿ∫Òæﬂ«œ≥™°¶</td>
+									</tr>
+									<tr>
+										<td class="">5</td>
+										<td>π⁄OO</td>
+										<td class="tleft" style="text-align:left">33»∏ ∞¯¿Œ¡ﬂ∞≥ªÁ Ω√«Ë ≥ π´ æÓ∑¡ø¸Ω¿¥œ¥Ÿ.. ø√«ÿ ∏ﬁ∞°∑£µÂ æ∆¥œæ˙¿∏∏È Ω√«Ë¿ª ∏¡ƒ• ª∑«ﬂ≥◊ø‰ §– ¡¶πﬂ ∞¯π˝ ∞˙∂Ù∏∏ ∏È«ﬂ¿∏∏È «’¥œ¥Ÿ..</td>
+									</tr>
+									<tr>
+										<td class="">4</td>
+										<td>π⁄OO</td>
+										<td class="tleft" style="text-align:left">33»∏ ∞¯¿Œ¡ﬂ∞≥ªÁ Ω√«Ë ≥ π´ æÓ∑¡ø¸Ω¿¥œ¥Ÿ.. ø√«ÿ ∏ﬁ∞°∑£µÂ æ∆¥œæ˙¿∏∏È Ω√«Ë¿ª ∏¡ƒ• ª∑«ﬂ≥◊ø‰ §– ¡¶πﬂ ∞¯π˝ ∞˙∂Ù∏∏ ∏È«ﬂ¿∏∏È «’¥œ¥Ÿ..</td>
+									</tr>
+									<tr>
+										<td class="">3</td>
+										<td>π⁄OO</td>
+										<td class="tleft" style="text-align:left">33»∏ ∞¯¿Œ¡ﬂ∞≥ªÁ Ω√«Ë ≥ π´ æÓ∑¡ø¸Ω¿¥œ¥Ÿ.. ø√«ÿ ∏ﬁ∞°∑£µÂ æ∆¥œæ˙¿∏∏È Ω√«Ë¿ª ∏¡ƒ• ª∑«ﬂ≥◊ø‰ §– ¡¶πﬂ ∞¯π˝ ∞˙∂Ù∏∏ ∏È«ﬂ¿∏∏È «’¥œ¥Ÿ..</td>
+									</tr>
+									<tr>
+										<td class="">2</td>
+										<td>π⁄OO</td>
+										<td class="tleft" style="text-align:left">33»∏ ∞¯¿Œ¡ﬂ∞≥ªÁ Ω√«Ë ≥ π´ æÓ∑¡ø¸Ω¿¥œ¥Ÿ.. ø√«ÿ ∏ﬁ∞°∑£µÂ æ∆¥œæ˙¿∏∏È Ω√«Ë¿ª ∏¡ƒ• ª∑«ﬂ≥◊ø‰ §– ¡¶πﬂ ∞¯π˝ ∞˙∂Ù∏∏ ∏È«ﬂ¿∏∏È «’¥œ¥Ÿ..</td>
+									</tr>
+									<tr>
+										<td class="">1</td>
+										<td>π⁄OO</td>
+										<td class="tleft" style="text-align:left">33»∏ ∞¯¿Œ¡ﬂ∞≥ªÁ Ω√«Ë ≥ π´ æÓ∑¡ø¸Ω¿¥œ¥Ÿ.. ø√«ÿ ∏ﬁ∞°∑£µÂ æ∆¥œæ˙¿∏∏È Ω√«Ë¿ª ∏¡ƒ• ª∑«ﬂ≥◊ø‰ §– ¡¶πﬂ ∞¯π˝ ∞˙∂Ù∏∏ ∏È«ﬂ¿∏∏È «’¥œ¥Ÿ..</td>
+									</tr>
+									</tbody>
+								</table>
+								<!-- ∆‰¿Ã¬° -->
+								<div class="paging1 mt40">
+									<a href="javascript:;" class="arr"><img src="http://image.megaland.co.kr/icon/paging1.left.png" align="¿Ã¿¸"></a>
+									<span>
+										<a href="javascript:;" class="on">1</a>
+										<a href="javascript:;">2</a>
+										<a href="javascript:;">3</a>
+										<a href="javascript:;">4</a>
+										<a href="javascript:;">5</a>
+										<a href="javascript:;">6</a>
+										<a href="javascript:;">7</a>
+										<a href="javascript:;">8</a>
+										<a href="javascript:;">9</a>
+										<a href="p">10</a>
+									</span>
+									<a href="javascript:;" class="arr"><img src="http://image.megaland.co.kr/icon/paging1.right.png" alt="¥Ÿ¿Ω"></a>
+								</div>
+							</div>
+						</div>
+					</div>					
+					<!-- //≈«2 -->
+					
+					<!-- ≈«3 «ÿº≥∞≠¿« -->
+					<div class="js_tab_con_type fsv_con03" id="fsv_con03">
+						<div class="floBnrWrap">
+							<div class="floBnr">
+								<a href="javascript:;" onclick="fnGoEvent()" class="btn_event"><img src="//img.megaland.co.kr/full_service/2023/1027/fsv_flobnr.png" alt="º±π∞ ªÃ±‚ ¿Ã∫•∆Æ"></a>
+								<a href="javascipt:;" onclick="fnSetFocus('id','fsv',0)" class="btn_top"><img src="http://img.megaland.co.kr/full_service/2023/1027/top.png" alt="top"></a>
+							</div>
+						</div>
+						<div class="inner">
+							<div class="exam_explain_wrap">
+								<div class="exam_tit"><strong class="mark2">«ÿº≥ ∞≠¿« l</strong> 34»∏ ∞¯¿Œ¡ﬂ∞≥ªÁ</div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+								<div class="js_tab_wrap">
+									<ul class="js_tab_text">
+										<li class="tab1 on"><a href="#js_tab_text1">1¬˜ ∞˙∏Ò</a></li>
+										<li class="tab2"><a href="#js_tab_text2">2¬˜ ∞˙∏Ò</a></li>
+									</ul>
+									<div id="js_tab_text1" class="js_tab_con_type on">
+										<div class="exam_explain">
+											<p class="tit1"><span>1¬˜ ∞˙∏Ò</span>∫ŒµøªÍ«–∞≥∑–</p>
+											<ul class="profs">
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/sparkguy2041.jpg" alt="¿Ã¡æ»£ ±≥ºˆ¥‘"></a>
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/blueinsect1.jpg" alt="»≤¿Áø¯ ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+											</ul>
+						
+											<p class="tit1"><span>1¬˜ ∞˙∏Ò</span>πŒπ˝ π◊ πŒªÁ∆Ø∫∞π˝</p>
+											<ul class="profs">
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/chd1024.jpg" alt="√§»Ò¥Î ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/jesse60.jpg" alt="º≠ºÆ¡¯ ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/mikey1017.jpg" alt="¡§µøº∑ ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>																								
+											</ul>
+										</div>
+									</div>
+									<div id="js_tab_text2" class="js_tab_con_type">
+										<div class="exam_explain">											
+											<p class="tit1"><span>2¬˜ ∞˙∏Ò</span>¡ﬂ∞≥ªÁπ˝∑… π◊ Ω«π´</p>
+											<ul class="profs">
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/sjleon7.jpg" alt="±ËªÛ¡¯ ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/hjs007007.jpg" alt="»≤¡§º± ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+											</ul>
+											
+											<p class="tit1"><span>2¬˜ ∞˙∏Ò</span>∫ŒµøªÍ∞¯π˝</p>
+											<ul class="profs">
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/ko37258.jpg" alt="∞ÌªÛ√∂ ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/heesang1020.jpg" alt="±Ë»ÒªÛ ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/gon4tlsg.jpg" alt="¿ÃªÛ∞Ô ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+											</ul>
+											
+											<p class="tit1"><span>2¬˜ ∞˙∏Ò</span>∫ŒµøªÍ∞¯Ω√π˝</p>
+											<ul class="profs">
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/hotgongsi00.jpg" alt="±Ë∫¥∑ƒ ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/mhs4309.jpg" alt="∏Ò»Òºˆ ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/furitan112.jpg" alt="πËªÛøÎ ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+											</ul>
+						
+											<p class="tit1"><span>2¬˜ ∞˙∏Ò</span>∫ŒµøªÍººπ˝</p>
+											<ul class="profs">
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/song7245.jpg" alt="¿Ãº€ø¯ ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="prof_img">
+														<a href="#;"><img src="http://img.megaland.co.kr/full_service/2023/1027/lbuki75.jpg" alt="¿”±‚ø¯ ±≥ºˆ¥‘"></a><!-- 23.10.26 -->
+													</div>
+													<div class="infos">
+														<dl class="infobox">
+															<dt>√—∆Ú</dt>
+															<dd>
+																°⁄ πŒπ˝¿« »Â∏ß∞˙ «ŸΩ…¿ª ¿‚¥¬ Ω«¿¸ø° ∞≠«— ∞≠¿«! øÏΩ¬ø± ±≥ºˆ¥‘ °⁄<br>
+																«’∞›¿« « ºˆ ¡∂∞«, πŒπ˝ πÆ¡¶«Æ¿Ã ∞≠¡¬ º“∞≥<br>
+																<em>°· »ÆΩ««— πÆ¡¶«Æ¿Ã! ∏∏¡°¿ª ∞¯∑´«—¥Ÿ!!</em><br><br>
+																- ¿Ã∑–¿ª πŸ≈¡¿∏∑Œ πÆ¡¶«Æ¿Ãø° ¿¿øÎ«œ∞Ì «–Ω¿«“ ºˆ ¿÷µµ∑œ µµøÕ¡÷¥¬ ∞≠¿«<br>
+																- Ω√«ËπÆ¡¶¿« √‚¡¶ ¿Ø«¸¿ª ∆ƒæ««œø© ∞ÌµÊ¡°¿ª æÚ¿ª ºˆ ¿÷¥¬ ∞≠¿«
+																<a href="javascript:;" onclick="$('#popup_more').fadeIn();" class="btn_more">¥ı∫∏±‚</a>
+															</dd>
+														</dl>
+														<div class="buttons clearfix">
+															<a href="" class="blue">HD</a>
+															<a href="" class="gray">¿œπ›</a>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// ≈«3 «ÿº≥∞≠¿« -->
+					
+					<!-- ≈«4 ≈Î∞Ë ∫–ºÆ -->
+					<div class="js_tab_con_type fsv_con04" id="fsv_con04">
+						<div class="floBnrWrap">
+							<div class="floBnr">
+								<a href="javascript:;" onclick="fnGoEvent()" class="btn_event"><img src="//img.megaland.co.kr/full_service/2023/1027/fsv_flobnr.png" alt="º±π∞ ªÃ±‚ ¿Ã∫•∆Æ"></a>
+								<a href="javascipt:;" onclick="fnSetFocus('id','fsv',0)" class="btn_top"><img src="http://img.megaland.co.kr/full_service/2023/1027/top.png" alt="top"></a>
+							</div>
+						</div>
+						<div class="inner">
+							<div class="analysis_wrap">
+								<div class="analysis_tit"><strong class="mark2">≈Î∞Ë ∫–ºÆ l</strong> 34»∏ ∞¯¿Œ¡ﬂ∞≥ªÁ</div>
+								<div class="analysis">
+									<ul class="tabin_tab2 js_tab_type">
+										<li class="bt1 on"><a href="#analy1">∫ŒµøªÍ«–∞≥∑–</a></li>
+										<li class="bt2"><a href="#analy2">πŒπ˝ π◊ πŒªÁ∆Ø∫∞π˝</a></li>
+										<li class="bt3"><a href="#analy3">¡ﬂ∞≥ªÁπ˝∑… π◊ Ω«π´</a></li>
+										<li class="bt4"><a href="#analy4">∫ŒµøªÍ∞¯π˝ </a></li>
+										<li class="bt5"><a href="#analy5">∫ŒµøªÍ∞¯Ω√π˝ </a></li>
+										<li class="bt6"><a href="#analy6">∫ŒµøªÍººπ˝ </a></li>
+									</ul>
+				
+									<!--1. ∫ŒµøªÍ«–∞≥∑–-->
+									<div id="analy1" class="js_tab_con_type on">
+										<p class="titarea mt40"><img src="http://img.megaland.co.kr/full_service/2019/1024/title_03_1.png" alt="¥‹ø¯∫∞ √‚¡¶ ∫Ò¡ﬂ"></p>
+										<div class="tbl20">
+											<table id="blind1_table">
+												<colgroup>
+													<col style="width: 200px;">
+													<col>
+													<col span="2" style="width: 200px">
+												</colgroup>
+												<thead>
+												<tr>
+													<th colspan="2">±∏∫–</th>
+													<th>πÆ«◊ ºˆ(¿¸≥‚ ¥Î∫Ò)</th>
+													<th>∫Ò¿≤(%)</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<th rowspan="2">∫ŒµøªÍ«– √—∑–</th>
+													<td class="tleft pl20">∫ŒµøªÍ¿« ∞≥≥‰, ∫–∑˘</td>
+													<td>2 ( 1 )</td>
+													<td>00%</td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∫ŒµøªÍ¿« ∆Øº∫</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th rowspan="6">∫ŒµøªÍ«– ∞¢∑–</th>
+													<td class="tleft pl20">∫ŒµøªÍ ∞Ê¡¶∑–</td>
+													<td>2 ( 1 )</td>
+													<td>00%</td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∫ŒµøªÍ Ω√¿Â∑–</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∫ŒµøªÍ ¡§√•∑–</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∫ŒµøªÍ ≈ı¿⁄∑–</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∫ŒµøªÍ ±›¿∂∑–</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∫ŒµøªÍ ∞≥πﬂ π◊ ∞¸∏Æ∑–</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th rowspan="3"  class="bdbn">∫ŒµøªÍ ∞®¡§∆Ú∞°∑–</th>
+													<td class="tleft pl20">∞®¡§∆Ú∞° ±‚√ ¿Ã∑–∞˙ ∫ŒµøªÍ ∞°∞›¿Ã∑–</td>
+													<td>2 ( 1 )</td>
+													<td>00%</td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∞®¡§∆Ú∞°¿« πÊΩƒ</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="bdbn">
+													<td class="tleft pl20">∫ŒµøªÍ∞°∞›∞¯Ω√¡¶µµ</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="sum">
+													<td colspan="2">√—∞Ë</td>
+													<td>40</td>
+													<td>100%</td>
+												</tr>
+												</tbody>
+											</table>
+											<!--js ∫Ì∂Û¿ŒµÂ-->
+											<div class="blind_lypop" id="blind1">
+												<span>11/3(±›)ø°<br>∞¯∞≥µÀ¥œ¥Ÿ</span>
+											</div>
+											<!--//js ∫Ì∂Û¿ŒµÂ-->
+										</div>
+										<!--πÆ«◊∫∞ ≥≠¿Ãµµ-->
+										<p class="titarea mt60">
+											<img src="http://img.megaland.co.kr/full_service/2019/1024/title_04.png" alt="πÆ«◊∫∞ ≥≠¿Ãµµ">
+											<span>A«¸ Ω√«Ë¡ˆ ±‚¡ÿ</span>
+										</p>
+										<div class="relative">
+											<div class="tbl20 mt20">
+												<table>
+													<colgroup>
+														<col span="4" style="width: 20%;">
+													</colgroup>
+													<tr>
+														<th class="bg1">ªÛ</th>
+														<th class="bg1">¡ﬂ</th>
+														<th class="bg1">«œ</th>
+														<th class="bg1">∞Ë</th>
+													</tr>
+													<tr>
+														<td>7</td>
+														<td>22</td>
+														<td>11</td>
+														<td>40</td>
+													</tr>
+												</table>
+											</div>
+											<div class="tbl20 mt20">
+												<table class="table_examlevel">
+													<colgroup>
+														<col span="10" style="width: 10%;">
+													</colgroup>
+													<tr>
+														<th>1</th>
+														<th>2</th>
+														<th>3</th>
+														<th>4</th>
+														<th>5</th>
+														<th>6</th>
+														<th>7</th>
+														<th>8</th>
+														<th>9</th>
+														<th>10</th>
+													</tr>
+													<tr>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+													<tr>
+														<th>11</th>
+														<th>12</th>
+														<th>13</th>
+														<th>14</th>
+														<th>15</th>
+														<th>16</th>
+														<th>17</th>
+														<th>18</th>
+														<th>19</th>
+														<th>20</th>
+													</tr>
+													<tr>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+													<tr>
+														<th>21</th>
+														<th>22</th>
+														<th>23</th>
+														<th>24</th>
+														<th>25</th>
+														<th>26</th>
+														<th>27</th>
+														<th>28</th>
+														<th>29</th>
+														<th>30</th>
+													</tr>
+													<tr>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+													</tr>
+													<tr>
+														<th>31</th>
+														<th>32</th>
+														<th>33</th>
+														<th>34</th>
+														<th>35</th>
+														<th>36</th>
+														<th>37</th>
+														<th>38</th>
+														<th>39</th>
+														<th>40</th>
+													</tr>
+													<tr>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+												</table>
+											</div>
+											<div class="blind_lypop full"><span>11/3(±›)ø°<br>∞¯∞≥µÀ¥œ¥Ÿ</span></div><!--//css ∫Ì∂Û¿ŒµÂ-->
+										</div>
+										<!--//πÆ«◊∫∞ ≥≠¿Ãµµ-->
+									</div>
+									<!--//∫ŒµøªÍ«–∞≥∑–-->
+				
+									<!--2. πŒπ˝ π◊ πŒªÁ∆Ø∫∞π˝-->
+									<div id="analy2" class="js_tab_con_type">
+										<p class="titarea mt40"><img src="http://img.megaland.co.kr/full_service/2019/1024/title_03_2.png" alt="¥‹ø¯∫∞ √‚¡¶ ∫Ò¡ﬂ"></p>
+										<div class="tbl20">
+											<table id="blind2_table">
+												<colgroup>
+													<col style="width: 200px;">
+													<col>
+													<col>
+													<col span="2" style="width: 200px">
+												</colgroup>
+												<thead>
+												<tr>
+													<th colspan="3">±∏∫–</th>
+													<th>πÆ«◊ ºˆ(¿¸≥‚ ¥Î∫Ò)</th>
+													<th>∫Ò¿≤(%)</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<th rowspan="6">πŒπ˝√—ƒ¢</th>
+													<td colspan="2" class="tleft pl20">±«∏Æ¿« ∫Øµø</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">π˝∑¸«‡¿ß</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">¿«ªÁ«•Ω√</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">π˝∑¸«‡¿ß¿« ¥Î∏Æ</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">π´»øøÕ √Îº“</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">π˝∑¸«‡¿ß¿« ∫Œ∞¸</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th rowspan="6">π∞±«π˝</th>
+													<td colspan="2" class="tleft pl20">π∞±«π˝º≠∑–</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">π∞±«∫Øµø</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">¡°±«</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">º“¿Ø±«</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">øÎ¿Õπ∞±«</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">¥„∫∏π∞±«</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th rowspan="2">∞Ëæ‡π˝</th>
+													<td colspan="2" class="tleft pl20">∞Ëæ‡π˝ √—∑–</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">∞Ëæ‡π˝ ∞¢∑–</td>
+													<td></td>
+													<td></td>
+												</tr>
 
-    <script src="./js/common.js"></script>
-    <script src="./js/main.js"></script>
+												<tr>
+													<th rowspan="5"  class="bdbn">πŒªÁ∆Ø∫∞π˝</th>
+													<td colspan="2" class="tleft pl20">¡÷≈√¿”¥Î¬˜∫∏»£π˝</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">ªÛ∞°∞«π∞ ¿”¥Î¬˜ ∫∏»£π˝</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">∞°µÓ±‚¥„∫∏µÓø° ∞¸«— π˝∑¸</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="tleft pl20">¡˝«’∞«π∞¿« º“¿Ø π◊ ∞¸∏Æø° ∞¸«— π˝∑¸</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="bdbn">
+													<td colspan="2" class="tleft pl20">∫ŒµøªÍ Ω«±«∏Æ¿⁄∏Ì¿« µÓ±‚ø° ∞¸«— π˝∑¸</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="sum">
+													<td colspan="3">√—∞Ë</td>
+													<td>40</td>
+													<td>100%</td>
+												</tr>
+												</tbody>
+											</table>
+											<!--js ∫Ì∂Û¿ŒµÂ-->
+											<div class="blind_lypop" id="blind2">
+												<span>11/3(±›)ø°<br>∞¯∞≥µÀ¥œ¥Ÿ</span>
+											</div>
+											<!--//js ∫Ì∂Û¿ŒµÂ-->
+										</div>
+					
+										<!--πÆ«◊∫∞ ≥≠¿Ãµµ-->
+										<p class="titarea mt60">
+											<img src="http://img.megaland.co.kr/full_service/2019/1024/title_04.png" alt="πÆ«◊∫∞ ≥≠¿Ãµµ">
+											<span>A«¸ Ω√«Ë¡ˆ ±‚¡ÿ</span>
+										</p>
+										<div class="relative">
+											<div class="tbl20 mt20">
+												<table>
+													<colgroup>
+														<col span="4" style="width: 20%;">
+													</colgroup>
+													<tr>
+														<th class="bg1">ªÛ</th>
+														<th class="bg1">¡ﬂ</th>
+														<th class="bg1">«œ</th>
+														<th class="bg1">∞Ë</th>
+													</tr>
+													<tr>
+														<td>7</td>
+														<td>22</td>
+														<td>11</td>
+														<td>40</td>
+													</tr>
+												</table>
+											</div>
+											<div class="tbl20 mt20">
+												<table class="table_examlevel">
+													<colgroup>
+														<col span="10" style="width: 10%;">
+													</colgroup>
+													<tr>
+														<th>1</th>
+														<th>2</th>
+														<th>3</th>
+														<th>4</th>
+														<th>5</th>
+														<th>6</th>
+														<th>7</th>
+														<th>8</th>
+														<th>9</th>
+														<th>10</th>
+													</tr>
+													<tr>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+													<tr>
+														<th>11</th>
+														<th>12</th>
+														<th>13</th>
+														<th>14</th>
+														<th>15</th>
+														<th>16</th>
+														<th>17</th>
+														<th>18</th>
+														<th>19</th>
+														<th>20</th>
+													</tr>
+													<tr>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+													<tr>
+														<th>21</th>
+														<th>22</th>
+														<th>23</th>
+														<th>24</th>
+														<th>25</th>
+														<th>26</th>
+														<th>27</th>
+														<th>28</th>
+														<th>29</th>
+														<th>30</th>
+													</tr>
+													<tr>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+													</tr>
+													<tr>
+														<th>31</th>
+														<th>32</th>
+														<th>33</th>
+														<th>34</th>
+														<th>35</th>
+														<th>36</th>
+														<th>37</th>
+														<th>38</th>
+														<th>39</th>
+														<th>40</th>
+													</tr>
+													<tr>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+												</table>
+											</div>
+											<div class="blind_lypop full"><span>11/3(±›)ø°<br>∞¯∞≥µÀ¥œ¥Ÿ</span></div><!--//css ∫Ì∂Û¿ŒµÂ-->
+										</div>
+										<!--//πÆ«◊∫∞ ≥≠¿Ãµµ-->
+									</div>
+									<!--//πŒπ˝ π◊ πŒªÁ∆Ø∫∞π˝-->
+				
+									<!--3. ¡ﬂ∞≥ªÁπ˝∑… π◊ Ω«π´-->
+									<div id="analy3" class="js_tab_con_type">
+										<p class="titarea mt40"><img src="http://img.megaland.co.kr/full_service/2019/1024/title_03_3.png" alt="¥‹ø¯∫∞ √‚¡¶ ∫Ò¡ﬂ"></p>
+										<div class="tbl20">
+											<table id="blind3_table">
+												<colgroup>
+													<col style="width: 200px;">
+													<col>
+													<col span="2" style="width: 200px">
+												</colgroup>
+												<thead>
+												<tr>
+													<th colspan="2">±∏∫–</th>
+													<th>πÆ«◊ ºˆ(¿¸≥‚ ¥Î∫Ò)</th>
+													<th>∫Ò¿≤(%)</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<th rowspan="9">∞¯¿Œ¡ﬂ∞≥ªÁπ˝</th>
+													<td class="tleft pl20">√—ƒ¢</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∞¯¿Œ¡ﬂ∞≥ªÁ Ω√«Ë ¡¶µµ π◊ ±≥¿∞¡¶µµ</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">¡ﬂ∞≥ªÁπ´º“ ∞≥º≥µÓ∑œ π◊ ∞·∞›ªÁ¿Ø</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">¡ﬂ∞≥æ˜ ∞Êøµ</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∞≥æ˜∞¯¿Œ¡ﬂ∞≥ªÁ¿« ¿«π´øÕ √•¿”</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∞≥æ˜∞¯¿Œ¡ﬂ∞≥ªÁ¿« ∫∏ºˆ</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∞≥æ˜∞¯¿Œ¡ﬂ∞≥ªÁ ∞£¿« ªÛ»£«˘∑¬</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∫∏ƒ¢ (∆˜ªÛ±›, «‡¡§ºˆºˆ∑·)</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">¡ˆµµ∞®µ∂ π◊ ∞¢¡æ ±‘¡¶</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th rowspan="3">∫ŒµøªÍ∞≈∑° Ω≈∞Ì π˝∑…</th>
+													<td class="tleft pl20">∫ŒµøªÍ∞≈∑°Ω≈∞Ì¡¶µµ</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">≈‰¡ˆ∞≈∑°«„∞°¡¶µµ</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">ø‹±π¿Œ¿« ∫ŒµøªÍ√ÎµÊ ∆Ø∑ </td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th rowspan="5" class="bdbn">¡ﬂ∞≥Ω«π´</th>
+													<td class="tleft pl20">¡ﬂ∞≥Ω«π´øÕ ¡ﬂ∞≥∞Ëæ‡</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">¡ﬂ∞≥¥ÎªÛπ∞¿« ¡∂ªÁ»Æ¿Œº≥∏Ì(∫–π¶±‚¡ˆ±«, ¿ÂªÁπ˝, ≥Û¡ˆπ˝ µÓ)</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">øµæ˜ »∞µø∞˙ ∞≈∑°∞Ëæ‡ √º∞·</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">¡ﬂ∞≥Ω«π´ ∞¸∑√ π˝∑…(Ω«∏Ìπ˝, ¡÷¿”π˝, ªÛ¿”π˝ µÓ)</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∞Ê∏≈∞¸∑√Ω«π´</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="sum">
+													<td colspan="2">√—∞Ë</td>
+													<td>40</td>
+													<td>100%</td>
+												</tr>
+												</tbody>
+											</table>
+											<!--js ∫Ì∂Û¿ŒµÂ-->
+											<div class="blind_lypop" id="blind3">
+												<span>11/3(±›)ø°<br>∞¯∞≥µÀ¥œ¥Ÿ</span>
+											</div>
+											<!--//js ∫Ì∂Û¿ŒµÂ-->
+										</div>
+					
+										<!--πÆ«◊∫∞ ≥≠¿Ãµµ-->
+										<p class="titarea mt60">
+											<img src="http://img.megaland.co.kr/full_service/2019/1024/title_04.png" alt="πÆ«◊∫∞ ≥≠¿Ãµµ">
+											<span>A«¸ Ω√«Ë¡ˆ ±‚¡ÿ</span>
+										</p>
+										<div class="relative">
+											<div class="tbl20 mt20">
+												<table>
+													<colgroup>
+														<col span="4" style="width: 20%;">
+													</colgroup>
+													<tr>
+														<th class="bg1">ªÛ</th>
+														<th class="bg1">¡ﬂ</th>
+														<th class="bg1">«œ</th>
+														<th class="bg1">∞Ë</th>
+													</tr>
+													<tr>
+														<td>7</td>
+														<td>22</td>
+														<td>11</td>
+														<td>40</td>
+													</tr>
+												</table>
+											</div>
+											<div class="tbl20 mt20">
+												<table class="table_examlevel">
+													<colgroup>
+														<col span="10" style="width: 10%;">
+													</colgroup>
+													<tr>
+														<th>1</th>
+														<th>2</th>
+														<th>3</th>
+														<th>4</th>
+														<th>5</th>
+														<th>6</th>
+														<th>7</th>
+														<th>8</th>
+														<th>9</th>
+														<th>10</th>
+													</tr>
+													<tr>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+													<tr>
+														<th>11</th>
+														<th>12</th>
+														<th>13</th>
+														<th>14</th>
+														<th>15</th>
+														<th>16</th>
+														<th>17</th>
+														<th>18</th>
+														<th>19</th>
+														<th>20</th>
+													</tr>
+													<tr>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+													<tr>
+														<th>21</th>
+														<th>22</th>
+														<th>23</th>
+														<th>24</th>
+														<th>25</th>
+														<th>26</th>
+														<th>27</th>
+														<th>28</th>
+														<th>29</th>
+														<th>30</th>
+													</tr>
+													<tr>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+													</tr>
+													<tr>
+														<th>31</th>
+														<th>32</th>
+														<th>33</th>
+														<th>34</th>
+														<th>35</th>
+														<th>36</th>
+														<th>37</th>
+														<th>38</th>
+														<th>39</th>
+														<th>40</th>
+													</tr>
+													<tr>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+												</table>
+											</div>
+											<div class="blind_lypop full"><span>11/3(±›)ø°<br>∞¯∞≥µÀ¥œ¥Ÿ</span></div><!--//css ∫Ì∂Û¿ŒµÂ-->
+										</div>
+										<!--//πÆ«◊∫∞ ≥≠¿Ãµµ-->
+									</div>
+									<!--//¡ﬂ∞≥ªÁπ˝∑… π◊ Ω«π´-->
+				
+									<!--4. ∫ŒµøªÍ∞¯π˝-->
+									<div id="analy4" class="js_tab_con_type ">
+										<p class="titarea mt40"><img src="http://img.megaland.co.kr/full_service/2019/1024/title_03_4.png" alt="¥‹ø¯∫∞ √‚¡¶ ∫Ò¡ﬂ"></p>
+										<div class="tbl20">
+											<table id="blind4_table">
+												<colgroup>
+													<col>
+													<col span="2" style="width: 250px">
+												</colgroup>
+												<thead>
+												<tr>
+													<th>±∏∫–</th>
+													<th>πÆ«◊ ºˆ(¿¸≥‚ ¥Î∫Ò)</th>
+													<th>∫Ò¿≤(%)</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<th>±π≈‰¿« ∞Ë»π π◊ ¿ÃøÎø° ∞¸«— π˝∑¸</th>
+													<td>2 ( 1 )</td>
+													<td>00%</td>
+												</tr>
+												<tr>
+													<th>µµΩ√∞≥πﬂπ˝</th>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th>µµΩ√ π◊ ¡÷∞≈»Ø∞Ê¡§∫Òπ˝</th>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th>∞«√‡π˝</th>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th>¡÷≈√π˝</th>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="bdbn">
+													<th>≥Û¡ˆπ˝</th>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="sum">
+													<td>√—∞Ë</td>
+													<td>40</td>
+													<td>100%</td>
+												</tr>
+												</tbody>
+											</table>
+											<!--js ∫Ì∂Û¿ŒµÂ-->
+											<div class="blind_lypop" id="blind4">
+												<span style="margin-top: 140px;">11/3(±›)ø°<br>∞¯∞≥µÀ¥œ¥Ÿ</span>
+											</div>
+											<!--//js ∫Ì∂Û¿ŒµÂ-->
+										</div>
+					
+										<!--πÆ«◊∫∞ ≥≠¿Ãµµ-->
+										<p class="titarea mt60">
+											<img src="http://img.megaland.co.kr/full_service/2019/1024/title_04.png" alt="πÆ«◊∫∞ ≥≠¿Ãµµ">
+											<span>A«¸ Ω√«Ë¡ˆ ±‚¡ÿ</span>
+										</p>
+										<div class="relative">
+											<div class="tbl20 mt20">
+												<table>
+													<colgroup>
+														<col span="4" style="width: 20%;">
+													</colgroup>
+													<tr>
+														<th class="bg1">ªÛ</th>
+														<th class="bg1">¡ﬂ</th>
+														<th class="bg1">«œ</th>
+														<th class="bg1">∞Ë</th>
+													</tr>
+													<tr>
+														<td>7</td>
+														<td>22</td>
+														<td>11</td>
+														<td>40</td>
+													</tr>
+												</table>
+											</div>
+											<div class="tbl20 mt20">
+												<table class="table_examlevel">
+													<colgroup>
+														<col span="10" style="width: 10%;">
+													</colgroup>
+													<tr>
+														<th>1</th>
+														<th>2</th>
+														<th>3</th>
+														<th>4</th>
+														<th>5</th>
+														<th>6</th>
+														<th>7</th>
+														<th>8</th>
+														<th>9</th>
+														<th>10</th>
+													</tr>
+													<tr>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+													<tr>
+														<th>11</th>
+														<th>12</th>
+														<th>13</th>
+														<th>14</th>
+														<th>15</th>
+														<th>16</th>
+														<th>17</th>
+														<th>18</th>
+														<th>19</th>
+														<th>20</th>
+													</tr>
+													<tr>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+													<tr>
+														<th>21</th>
+														<th>22</th>
+														<th>23</th>
+														<th>24</th>
+														<th>25</th>
+														<th>26</th>
+														<th>27</th>
+														<th>28</th>
+														<th>29</th>
+														<th>30</th>
+													</tr>
+													<tr>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+													</tr>
+													<tr>
+														<th>31</th>
+														<th>32</th>
+														<th>33</th>
+														<th>34</th>
+														<th>35</th>
+														<th>36</th>
+														<th>37</th>
+														<th>38</th>
+														<th>39</th>
+														<th>40</th>
+													</tr>
+													<tr>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+												</table>
+											</div>
+											<div class="blind_lypop full"><span>11/3(±›)ø°<br>∞¯∞≥µÀ¥œ¥Ÿ</span></div><!--//css ∫Ì∂Û¿ŒµÂ-->
+										</div>
+										<!--//πÆ«◊∫∞ ≥≠¿Ãµµ-->
+									</div>
+									<!--//∫ŒµøªÍ∞¯π˝-->
+				
+									<!--5.∫ŒµøªÍ∞¯Ω√π˝-->
+									<div id="analy5" class="js_tab_con_type">
+										<p class="titarea mt40"><img src="http://img.megaland.co.kr/full_service/2019/1024/title_03_5.png" alt="¥‹ø¯∫∞ √‚¡¶ ∫Ò¡ﬂ"></p>
+										<div class="tbl20">
+											<table id="blind5_table">
+												<colgroup>
+													<col style="width: 200px;">
+													<col>
+													<col span="2" style="width: 200px">
+												</colgroup>
+												<thead>
+												<tr>
+													<th colspan="2">±∏∫–</th>
+													<th>πÆ«◊ ºˆ(¿¸≥‚ ¥Î∫Ò)</th>
+													<th>∫Ò¿≤(%)</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<th rowspan="5">∞¯∞£¡§∫∏¿« ±∏√‡ π◊ ∞¸∏Æ<br>µÓø° ∞¸«— π˝∑¸</th>
+													<td class="tleft pl20">¡ˆ¿˚¡¶µµ ¿œπ›, ≈‰¡ˆµÓ∑œ</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">¡ˆ¿˚∞¯∫Œ</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">≈‰¡ˆ¿« ¿Ãµø π◊ ¡ˆ¿˚¡§∏Æ</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">¡ˆ¿˚√¯∑Æ</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∫∏ƒ¢ π◊ π˙ƒ¢</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th rowspan="4"  class="bdbn">∫ŒµøªÍµÓ±‚π˝</th>
+													<td class="tleft pl20">∫ŒµøªÍµÓ±‚√—ƒ¢</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">∞¢¡æ¿« ±«∏Æø° ¥Î«— µÓ±‚¿˝¬˜</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">µÓ±‚¿˝¬˜ √—∑–</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="bdbn">
+													<td class="tleft pl20">∞¢¡æ¿« µÓ±‚¿˝¬˜</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="sum">
+													<td colspan="2">√—∞Ë</td>
+													<td>40</td>
+													<td>100%</td>
+												</tr>
+												</tbody>
+											</table>
+											<!--js ∫Ì∂Û¿ŒµÂ-->
+											<div class="blind_lypop" id="blind5">
+												<span>11/3(±›)ø°<br>∞¯∞≥µÀ¥œ¥Ÿ</span>
+											</div>
+											<!--//js ∫Ì∂Û¿ŒµÂ-->
+										</div>
+					
+										<!--πÆ«◊∫∞ ≥≠¿Ãµµ-->
+										<p class="titarea mt60">
+											<img src="http://img.megaland.co.kr/full_service/2019/1024/title_04.png" alt="πÆ«◊∫∞ ≥≠¿Ãµµ">
+											<span>A«¸ Ω√«Ë¡ˆ ±‚¡ÿ</span>
+										</p>
+										<div class="relative">
+											<div class="tbl20 mt20">
+												<table>
+													<colgroup>
+														<col span="4" style="width: 20%;">
+													</colgroup>
+													<tr>
+														<th class="bg1">ªÛ</th>
+														<th class="bg1">¡ﬂ</th>
+														<th class="bg1">«œ</th>
+														<th class="bg1">∞Ë</th>
+													</tr>
+													<tr>
+														<td>7</td>
+														<td>22</td>
+														<td>11</td>
+														<td>40</td>
+													</tr>
+												</table>
+											</div>
+											<div class="tbl20 mt20">
+												<table class="table_examlevel">
+													<colgroup>
+														<col span="10" style="width: 10%;">
+													</colgroup>
+													<tr>
+														<th>1</th>
+														<th>2</th>
+														<th>3</th>
+														<th>4</th>
+														<th>5</th>
+														<th>6</th>
+														<th>7</th>
+														<th>8</th>
+														<th>9</th>
+														<th>10</th>
+													</tr>
+													<tr>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+													<tr>
+														<th>11</th>
+														<th>12</th>
+														<th>13</th>
+														<th>14</th>
+														<th>15</th>
+														<th>16</th>
+														<th>17</th>
+														<th>18</th>
+														<th>19</th>
+														<th>20</th>
+													</tr>
+													<tr>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+													<tr>
+														<th>21</th>
+														<th>22</th>
+														<th>23</th>
+														<th>24</th>
+														<th>25</th>
+														<th>26</th>
+														<th>27</th>
+														<th>28</th>
+														<th>29</th>
+														<th>30</th>
+													</tr>
+													<tr>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+													</tr>
+													<tr>
+														<th>31</th>
+														<th>32</th>
+														<th>33</th>
+														<th>34</th>
+														<th>35</th>
+														<th>36</th>
+														<th>37</th>
+														<th>38</th>
+														<th>39</th>
+														<th>40</th>
+													</tr>
+													<tr>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+												</table>
+											</div>
+											<div class="blind_lypop full"><span>11/3(±›)ø°<br>∞¯∞≥µÀ¥œ¥Ÿ</span></div><!--//css ∫Ì∂Û¿ŒµÂ-->
+										</div>
+										<!--//πÆ«◊∫∞ ≥≠¿Ãµµ-->
+									</div>
+									<!--//∫ŒµøªÍ∞¯Ω√π˝-->
+				
+									<!--6. ∫ŒµøªÍººπ˝-->
+									<div id="analy6" class="js_tab_con_type">
+										<p class="titarea mt40"><img src="http://img.megaland.co.kr/full_service/2019/1024/title_03_6.png" alt="¥‹ø¯∫∞ √‚¡¶ ∫Ò¡ﬂ"></p>
+										<div class="tbl20">
+											<table id="blind6_table">
+												<colgroup>
+													<col style="width: 200px;">
+													<col>
+													<col span="2" style="width: 200px">
+												</colgroup>
+												<thead>
+												<tr>
+													<th colspan="2">±∏∫–</th>
+													<th>πÆ«◊ ºˆ(¿¸≥‚ ¥Î∫Ò)</th>
+													<th>∫Ò¿≤(%)</th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+													<th colspan="2">¡∂ºº√—∑–</th>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th rowspan="4">¡ˆπÊºº</th>
+													<td class="tleft pl20">√ÎµÊºº</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">µÓ∑œ∏È«„ºº</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">¿ÁªÍºº</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">¡ˆπÊº“µÊºº</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th rowspan="3"  class="bdbn">±πºº</th>
+													<td class="tleft pl20">¡æ«’º“µÊºº</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td class="tleft pl20">æÁµµº“µÊºº</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="bdbn">
+													<td class="tleft pl20">¡æ«’∫ŒµøªÍºº</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr class="sum">
+													<td colspan="2">√—∞Ë</td>
+													<td>40</td>
+													<td>100%</td>
+												</tr>
+												</tbody>
+											</table>
+											<!--js ∫Ì∂Û¿ŒµÂ-->
+											<div class="blind_lypop" id="blind6">
+												<span>11/3(±›)ø°<br>∞¯∞≥µÀ¥œ¥Ÿ</span>
+											</div>
+											<!--//js∫Ì∂Û¿ŒµÂ-->
+										</div>
+					
+										<!--πÆ«◊∫∞ ≥≠¿Ãµµ-->
+										<p class="titarea mt60">
+											<img src="http://img.megaland.co.kr/full_service/2019/1024/title_04.png" alt="πÆ«◊∫∞ ≥≠¿Ãµµ">
+											<span>A«¸ Ω√«Ë¡ˆ ±‚¡ÿ</span>
+										</p>
+										<div class="relative">
+											<div class="tbl20 mt20">
+												<table>
+													<colgroup>
+														<col span="4" style="width: 20%;">
+													</colgroup>
+													<tr>
+														<th class="bg1">ªÛ</th>
+														<th class="bg1">¡ﬂ</th>
+														<th class="bg1">«œ</th>
+														<th class="bg1">∞Ë</th>
+													</tr>
+													<tr>
+														<td>7</td>
+														<td>22</td>
+														<td>11</td>
+														<td>40</td>
+													</tr>
+												</table>
+											</div>
+											<div class="tbl20 mt20">
+												<table class="table_examlevel">
+													<colgroup>
+														<col span="10" style="width: 10%;">
+													</colgroup>
+													<tr>
+														<th>1</th>
+														<th>2</th>
+														<th>3</th>
+														<th>4</th>
+														<th>5</th>
+														<th>6</th>
+														<th>7</th>
+														<th>8</th>
+														<th>9</th>
+														<th>10</th>
+													</tr>
+													<tr>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+													<tr>
+														<th>11</th>
+														<th>12</th>
+														<th>13</th>
+														<th>14</th>
+														<th>15</th>
+														<th>16</th>
+														<th>17</th>
+														<th>18</th>
+														<th>19</th>
+														<th>20</th>
+													</tr>
+													<tr>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+													<tr>
+														<th>21</th>
+														<th>22</th>
+														<th>23</th>
+														<th>24</th>
+														<th>25</th>
+														<th>26</th>
+														<th>27</th>
+														<th>28</th>
+														<th>29</th>
+														<th>30</th>
+													</tr>
+													<tr>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+													</tr>
+													<tr>
+														<th>31</th>
+														<th>32</th>
+														<th>33</th>
+														<th>34</th>
+														<th>35</th>
+														<th>36</th>
+														<th>37</th>
+														<th>38</th>
+														<th>39</th>
+														<th>40</th>
+													</tr>
+													<tr>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark3">«œ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark16">ªÛ</strong></td>
+														<td><strong class="mark2">¡ﬂ</strong></td>
+													</tr>
+												</table>
+											</div>
+											<div class="blind_lypop full"><span>11/3(±›)ø°<br>∞¯∞≥µÀ¥œ¥Ÿ</span></div><!--//css ∫Ì∂Û¿ŒµÂ-->
+										</div>
+										<!--//πÆ«◊∫∞ ≥≠¿Ãµµ-->
+									</div>
+									<!--//∫ŒµøªÍººπ˝-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// ≈«4 ≈Î∞Ë ∫–ºÆ -->
+
+					<!-- ≈«5 º±π∞ ªÃ±‚ ¿Ã∫•∆Æ -->
+					<div class="js_tab_con_type fsv_con05" id="fsv_con05">
+						<div class="fsv_con05_top"><div class="inner"><img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_con05_top.jpg" alt="∏ﬁ∞°∑£µÂ º±π∞ªÃ±‚ ¿Ã∫•∆Æ"></div></div>
+						<div class="fsv_con05_cont1">
+							<div class="inner">
+								<img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_con05_cont1.jpg" alt="¿Ã∫•∆Æ ¬¸ø©πÊπ˝" usemap="#btn_apply">
+								<!-- 23.10.25 -->
+								<map name="btn_apply">
+									<area shape="rect" coords="646,239,968,299" href="#fsv_con01_1" onclick="fnGolnb(1);" alt="¿⁄µø √§¡° º≠∫ÒΩ∫ ¬¸ø©«œ±‚">
+									<area shape="rect" coords="648,343,968,405" href="#fsv_con0102" onclick="fnGolnb(1);" alt="º≥πÆ¡∂ªÁ ¬¸ø©«œ±‚">
+									<area shape="rect" coords="646,447,968,507" href="javascript:;" onclick="fnGolnb(2);" alt="Ω√«Ë»ƒ±‚ ¥Ò±€ ¿€º∫«œ±‚">
+								</map>
+								<!--// 23.10.25 -->
+							</div>
+						</div>
+						<div class="fsv_con05_cont2">
+							<div class="inner">
+								<img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_con05_cont2.jpg" alt="º±π∞ ªÃ±‚ ¿Ã∫•∆Æ" usemap="#btn_gift">
+								<!-- ∞≥¿Œ¡§∫∏ µø¿« √º≈©π⁄Ω∫ -->
+								<label class="checkbox">
+									<input type="checkbox">&nbsp; ∞≥¿Œ¡§∫∏ »∞øÎ æ»≥ª∏¶ ∏µŒ »Æ¿Œ«œø¥∞Ì, ¿Ãø° µø¿««’¥œ¥Ÿ.
+									<a href="javascript:;" class="info_view">≥ªøÎ∫∏±‚ ></a>
+								</label>
+								 <!-- ∑Œ±◊¿Œ ¿¸ -->
+								 <div class="tag">
+									<a href="javascript:;"><img src="http://img.megaland.co.kr/full_service/2023/1027/tag1.png" alt="∑Œ±◊¿Œ¿ª«ÿ¡÷ººø‰"></a>
+								</div>
+								<!--// ∑Œ±◊¿Œ ¿¸ -->
+								<!-- ¬¸ø© ±‚»∏, ¥Á√∑«ˆ»≤ -->
+								<div class="tag type2">
+									<div class="count">
+										<img src="http://img.megaland.co.kr/full_service/2023/1027/tag3.png" alt="¬¸ø© ±‚»∏">
+										<p class="roulette_num">1</p>
+									</div>
+									<a href="javascript:;" class="btn_pop"><img src="http://img.megaland.co.kr/full_service/2023/1027/tag2.png" alt="≥™¿« ¥Á√∑«ˆ»≤"></a>
+								</div>
+								<!--// ¬¸ø© ±‚»∏, ¥Á√∑«ˆ»≤ -->
+								<map name="btn_gift">
+									<area shape="rect" coords="390,870,711,953" href="javascript:;" onclick="$('#ly_gift').fadeIn();" alt="start">
+								</map>								
+								<!-- ¥Á√∑ ∑π¿ÃæÓ∆Àæ˜ -->
+								<div class="layerPop" id="ly_gift">
+									<div class="popInner">
+										<!--  ∆Àæ˜≥ªøÎ  -->
+										<div class="img">
+											<!-- ƒÌ∆˘ ¿ÃπÃ¡ˆ -->
+											<div class="coupon_img">
+												<div class="gift">
+													<img src="http://img.megaland.co.kr/full_service/2023/1027/gift1.png" alt="Ω≈ºº∞ËªÛ«∞±« 30∏∏ø¯±«">
+													<p>√‡«œµÂ∏≥¥œ¥Ÿ.<span>Ω≈ºº∞Ë ªÛ«∞±« 30∏∏ø¯±«</span>ø° ¥Á√∑µ«æ˙Ω¿¥œ¥Ÿ.</p>
+												</div>
+												<!-- <div class="gift">
+													<img src="http://img.megaland.co.kr/full_service/2023/1027/gift2.png" alt="Ω≈ºº∞ËªÛ«∞±« 10∏∏ø¯±«">
+													<p>√‡«œµÂ∏≥¥œ¥Ÿ.<span>Ω≈ºº∞Ë ªÛ«∞±« 10∏∏ø¯±«</span>ø° ¥Á√∑µ«æ˙Ω¿¥œ¥Ÿ.</p>
+												</div> -->
+												<!-- <div class="gift">
+													<img src="http://img.megaland.co.kr/full_service/2023/1027/gift3.png" alt="ø√∏Æ∫Íøµ">
+													<p>√‡«œµÂ∏≥¥œ¥Ÿ.<span>ø√∏Æ∫Íøµ ªÛ«∞±« 5∏∏ø¯±«</span>ø° ¥Á√∑µ«æ˙Ω¿¥œ¥Ÿ.</p>
+												</div> -->
+												<!-- <div class="gift">
+													<img src="http://img.megaland.co.kr/full_service/2023/1027/gift4.png" alt="øµ»≠∞¸∂˜±«">
+													<p>√‡«œµÂ∏≥¥œ¥Ÿ.<span>∑‘µ•Ω√≥◊∏∂ 2¿Œ ¿ÃøÎ±«</span>ø° ¥Á√∑µ«æ˙Ω¿¥œ¥Ÿ.</p>
+												</div> -->
+												<!-- <div class="gift">
+													<img src="http://img.megaland.co.kr/full_service/2023/1027/gift5.png" alt="ø‰±‚ø‰">
+													<p>√‡«œµÂ∏≥¥œ¥Ÿ.<span>ø‰±‚ø‰ ªÛ«∞±« 1∏∏ø¯±«</span>ø° ¥Á√∑µ«æ˙Ω¿¥œ¥Ÿ.</p>
+												</div> -->
+												<!-- <div class="gift">
+													<img src="http://img.megaland.co.kr/full_service/2023/1027/gift6.png" alt="¿Ãµæﬂ">
+													<p>√‡«œµÂ∏≥¥œ¥Ÿ.<span>∏ﬁ∞°ƒø«« æ∆¿ÃΩ∫ æ∆∏ﬁ∏Æƒ´≥Î</span>ø° ¥Á√∑µ«æ˙Ω¿¥œ¥Ÿ.</p>
+												</div> -->
+												<!-- <div class="gift">
+													<img src="http://img.megaland.co.kr/full_service/2023/1027/gift7.png" alt="∏ﬁ∞°∑£µÂ ƒÌ∆˘">
+													<p>√‡«œµÂ∏≥¥œ¥Ÿ.<span>∏ﬁ∞°∑£µÂ ƒÌ∆˘</span>ø° ¥Á√∑µ«æ˙Ω¿¥œ¥Ÿ.</p>
+												</div> -->
+											</div>
+										</div>		
+										<a href="javascript:;" class="bt_popClose" onclick="$(this).parent().parent().fadeOut(100);">
+											<img src="http://img.megaland.co.kr/full_service/2023/1027/btn_pop_close.png" alt="»Æ¿Œ">
+										</a>
+									</div>
+									<span class="ly_dim" onclick="$(this).parent().fadeOut(200);"></span>
+								</div>
+								<!-- // ¥Á√∑ ∑π¿ÃæÓ∆Àæ˜ -->
+								<!-- ∏∂∞® ∑π¿ÃæÓ -->
+								<!-- <div class="event_end">
+									<strong>¿Ã∫•∆Æ∞°<br>∏∂∞®µ«æ˙Ω¿¥œ¥Ÿ.</strong>
+								</div> -->
+								
+								<img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_con05_cont2-2.jpg" alt="¿Ø¿«ªÁ«◊" usemap="#btn_notice">								
+								<map name="btn_notice">
+									<area shape="rect" coords="575,285,688,317" href="javascript:;" alt="»∏ø¯¡§∫∏ »Æ¿Œ«œ±‚">
+								</map>
+							</div>
+						</div>
+						<div class="fsv_con05_cont3">
+							<div class="inner"><img src="http://img.megaland.co.kr/full_service/2023/1027/fsv_con05_cont3.jpg" alt="∞≠ªÁ∑¬¿Ã «’∞›¿Ã¥Ÿ!"></div>
+						</div>
+					</div>
+					<!--// ≈«5 º±π∞ ªÃ±‚ ¿Ã∫•∆Æ -->
+				</div>
+            </div><!--//fsv-->
+
+			<script type="text/javascript">
+				//Tab
+				$(document).ready(function () {
+					$('.js_tab_type li a').on('click', function (e) {
+						var targetId = $(this).attr("href");
+						e.preventDefault();
+						$(this).parent('li').siblings().removeClass('on');
+						$(this).parent('li').addClass('on');
+						$(targetId).addClass('on').siblings().removeClass('on');
+						tableBlind_action();
+					});
+				});
+
+				//tab3- ≈Î∞Ë ∫–ºÆ :  ∫Ì∂Û¿ŒµÂ ∑π¿ÃæÓ
+				tableBlind_action(); // Table blind-layer Ω««‡
+
+				function tableBlind_action(){
+					tableBlind( '#blind1', '#blind1_table' , '0', '1', '12', '2' );  //∫ŒµøªÍ«–∞≥∑–
+					tableBlind( '#blind2', '#blind2_table' , '0', '1', '20', '2' );  //πŒπ˝ π◊ πŒªÁ∆Ø∫∞π˝
+					tableBlind( '#blind3', '#blind3_table' , '0', '1', '18', '2' );  //¡ﬂ∞≥ªÁπ˝∑… π◊ Ω«π´
+					tableBlind( '#blind4', '#blind4_table' , '0', '1', '7', '2' );  //∫ŒµøªÍ∞¯π˝
+					tableBlind( '#blind5', '#blind5_table' , '0', '1', '10', '2' );  //∫ŒµøªÍ∞¯Ω√π˝
+					tableBlind( '#blind6', '#blind6_table' , '0', '1', '9', '2' );  //∫ŒµøªÍººπ˝
+				}
+
+				//Table blind-layer «‘ºˆ
+				function tableBlind( layer, table, start_tr , start_td, end_tr , end_td ){
+					var $layer = $(layer);
+					var $table = $(table);
+					var $start = $table.find('tr:eq('+start_tr+') th:eq('+start_td+')')[0];   //th:eq -> td ±‚¡ÿ¿Ã∏È td:eq ∑Œ ∫Ø∞Ê
+					var $final = $table.find('tr:eq('+end_tr+') td:eq('+end_td+')')[0];
+
+					try {
+						$layer.css({
+							display: 'block',
+							top: $start.offsetTop ,
+							left: $start.offsetLeft ,
+							width: $final.offsetLeft - $start.offsetLeft + $final.offsetWidth ,
+							height: $final.offsetTop - $start.offsetTop + $final.offsetHeight
+						});
+					} catch (exception) { //ø°∑Ø √º≈©
+						console.log(  '∏≈∞≥ ∫Øºˆ∞™¿Ã ¡¶¥Î∑Œ ¿¸¥ﬁµ«¡ˆ æ ¿Ω'  );
+					}
+				} //Ω««‡ øπΩ√:   $(window).on('load resize', function(){   tableBlind( '#Blind1', '#table1', '1', '0', '4', '2' );   });  //º˝¿⁄º¯º≠: Ω√¿€tr, Ω√¿€td, ≥°tr, ≥°td
+
+			</script>
+			<!-- //34»∏ ∞¯¿Œ¡ﬂ∞≥ªÁ «Æº≠∫ÒΩ∫ -->
+
+		</div>
+    </div>
+
+    <!-- BOTTOM -->
+	<!-- FOOTER / -->
+	<div id="foot" style="height: 203px; background:#f3f3f5;">FOOTER</div>
+	<!-- / FOOTER -->
+</div>
+
+<script>
+	function fnGoEvent() {
+		$(".fsv_lnb li").removeClass('on');
+		$(".fsv_lnb li").eq(4).addClass('on');
+		$("#fsv_con05").addClass('on').siblings().removeClass('on');
+        window.scrollTo(0,0); //23.10.25
+	}
+
+	function fnGolnb(idx) {
+		$(".fsv_lnb li").removeClass('on');
+		$(".fsv_lnb li").eq(idx - 1).addClass('on');
+		$("#fsv_con0"+idx).addClass('on').siblings().removeClass('on');
+	}	
+</script>
 </body>
 </html>
+<script type="text/javascript"> 
+	//Focus «‘ºˆ
+	function fnSetFocus(type, type_nm, add_top) {
+		if (type.toUpperCase() != 'ID') {
+			var focus_id = '.'+ type_nm;
+		} else {
+			var focus_id = '#'+ type_nm;
+		}
+
+		//Target ∞Ì¡§ √≥∏Æ S
+		var intOffset = $(focus_id).offset();   
+		var intOffsetTop = intOffset.top - add_top;
+		var intOffsetLeft = intOffset.left;
+
+		$('body, html').stop();
+		$('body, html').animate({ scrollTop: intOffsetTop }, "slow");
+		//Target ∞Ì¡§ √≥∏Æ E
+	}
+	$(document).ready(function() {   
+		fnSetFocus( 'class' , 'container_full' , 0 );
+	});
+
+</script> 
