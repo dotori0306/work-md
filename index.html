@@ -673,7 +673,7 @@
 							<!--// 메시지 팝업 -->
                             <script type="text/javascript">
                                 function layerPopupOpen(imgurl){
-                                var position_top = $(this).scrollTop()-100;   //레이어 top 위치
+                                var position_top = $(this).scrollTop()+100;   //레이어 top 위치
                                 var imgsrc = imgurl
                             
                                 $('#layerPopImg').css({ top : position_top });
@@ -690,7 +690,7 @@
                             }
 							//레이어팝업 : 영상
 							function fnPlayMovie(vod_code){
-								var position_top = $(this).scrollTop()-100;   //레이어 top 위치
+								var position_top = $(this).scrollTop()+100;   //레이어 top 위치
 								$('#layerPop').css({ top : position_top });
 								url_text = encodeURI('https://www.youtube.com/embed/'+vod_code+'?autoplay=1&vq=hd1080&rel=0&start=0');
 
