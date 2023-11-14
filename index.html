@@ -30,7 +30,7 @@
 		<div class="container_full">
 			<!-- 34회 공인중개사 풀서비스 -->			
 			<script>
-				$(document).ready(function () {
+				$(function(){
 					$('.fsv_lnb li a').on('click', function (e) {
 						var targetId = $(this).attr("href");
 						e.preventDefault();
@@ -92,7 +92,7 @@
 				<span class="ly_dim" onclick="$(this).parent().fadeOut(200);"></span>
 			</div>
 			<script>
-				$(document).ready(function () {
+				$(function(){
 					$('#fsv .infobox .btn_more').click(function () {
 						$('#popup_more').fadeIn(150);
 					});
@@ -2672,7 +2672,7 @@
 
 			<script type="text/javascript">
 				//Tab
-				$(document).ready(function () {
+				$(function(){
 					$('.js_tab_type li a').on('click', function (e) {
 						var targetId = $(this).attr("href");
 						e.preventDefault();
